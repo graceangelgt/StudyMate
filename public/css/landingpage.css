@@ -4,27 +4,23 @@ body {
   background: #f5f9fc;
 }
 
-.container {
-  width: 100vw;
-  height: 3097px;
-  position: relative;
-  background: white;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 80px;
+  background: #f5f9fc;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.gradient-section-one {
-  width: 1280px;
-  height: 830px;
-  position: absolute;
-  top: 0;
-  background: linear-gradient(180deg, rgba(223, 235, 247, 0.50) 0%, #AAC7D7 100%);
+.logo-section {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  display: inline-block; /* Agar logo dan teks sejajar */
-  vertical-align: middle; /* Mengatur perataan vertikal */
-  height: 50px;
-  margin-top: 28px;
-  margin-left: 150px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 .logo-text {
@@ -33,37 +29,28 @@ body {
   color: #29353C;
 }
 
-  .nav-links {
-    display: inline-block;
-    margin-left: 300px; /* Menyesuaikan jarak antara StudyMate dan nav links */
-    vertical-align: middle; /* Agar nav links sejajar vertikal dengan logo dan teks */
-    margin-top: 10px;
-  }
-  
-  .nav-link {
-    font-family: 'Montserrat', sans-serif; /* Gunakan font Montserrat */
-    font-size: 17px;
-    font-weight: semi-bold;
-    margin-left: 15px; /* Jarak antara About dan Features */
-    text-decoration: none;
-    color: #333; /* Warna teks, sesuaikan dengan kebutuhan */
-    line-height: 70px; /* Menyesuaikan tinggi baris dengan tinggi logo untuk perataan vertikal */
-  }
-  
-  .nav-link:hover {
-    color: #007bff; /* Warna teks saat hover */
-  }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-  .search-bar {
-    display: flex;
-    align-items: center;
-    background-color: #6c8691; /* Adjust color to match your design */
-    padding: 8px 20px; /* Adjust padding for a smaller design */
-    border-radius: 20px;
-    width: 120px; /* Shortened width */
-    vertical-align: middle; /* Align with other elements */
-    margin-top: -53px;
-    margin-left: 180px;
+.nav-link {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #6c8691;
+  padding: 6px 12px;
+  border-radius: 20px;
 }
 
 .search-bar .icon {
@@ -100,6 +87,8 @@ body {
   background: #333;
   color: white;
 }
+
+
 
 
 /*segmen 1*/
