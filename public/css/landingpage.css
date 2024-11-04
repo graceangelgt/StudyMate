@@ -320,11 +320,10 @@ body {
 }
 /*Segmen 3*/
 .testimonial {
-  margin-top: 40px;
+  padding-top: 10px;
   text-align: center;
   background: linear-gradient(135deg, #28353D, #768A95); /* Gradient background */
   background-size: cover;
-  overflow: hidden;
   padding-bottom: 60px;
 }
 
@@ -332,6 +331,7 @@ body {
 .testimonial_title {
   font-family: 'Milky Vintage', sans-serif;
   font-size: 4rem;
+  margin-top: 30px;
   margin-bottom: 30px;
   font-weight: 300;
   color: white;
@@ -448,19 +448,18 @@ footer {
 
 .footer-section {
     flex: 1;
-    padding: 0 28px;
+    padding: 0 30px;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  margin-right: 15px; /* Menambah jarak antara logo dan teks <h4> */
 }
 
 .logof {
   height: 40px;
   margin-right: 10px;
-  margin-left: -100px; 
+  margin-left: 30px; 
   vertical-align: middle;
 }
 
@@ -471,11 +470,11 @@ footer {
 }
 
 .footer-section h4 {
-    font-weight: bold;
-    margin-bottom: 15px;
-    font-family: 'Jost', sans-serif ;
-    color: #29353C
-    
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: 'Jost', sans-serif;
+  color: #29353C;
+  padding-left: 40px; /* Menambah ruang di sisi kiri */
 }
 
 .footer-section p {
@@ -521,9 +520,10 @@ footer {
 .footer-section .socials a {
     color: #696F79;
     font-size: 1.2em;
-    margin-right: 10px;
+    margin-left: 30px;
     text-decoration: none;
     font-family: 'Jost', sans-serif
+    
 }
 
 .footer-section .socials a:hover {

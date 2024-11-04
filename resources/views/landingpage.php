@@ -66,6 +66,7 @@
       <a href="#point-system" class="feature__button">Point System</a>
     </div>
   </div>
+</section>
   <section class="testimonial" id="testimonial">
   <h2 class="testimonial_title">WHAT PEOPLE SAYS ABOUT US</h2>
   <div class="testimonial-navigation">
