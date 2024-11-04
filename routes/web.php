@@ -17,6 +17,15 @@ Route::get('/', function () {
     return view('landingpage');
 });
 
-Route::get('/login', function () {
+Route::get('/signin', function () {
     return view('login');
+});
+
+Route::get('/signup', function () {
+    return view('regist');
+});
+
+Route::post('/', function () {
+    // Tangani logika pendaftaran di sini
+    return view('landingpage'); // Kembali ke halaman landing page setelah signup
 });

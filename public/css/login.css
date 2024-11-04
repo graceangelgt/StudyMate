@@ -22,7 +22,8 @@ body {
 
 .left-panel {
     flex: 1;
-    background: url('/images/pictlogin.png') no-repeat center center;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('/images/pictlogin.png') no-repeat center center;
     background-size: cover;
     color: white;
     padding: 40px;
@@ -30,7 +31,6 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    opacity: 50%;
 }
 
 
@@ -72,6 +72,7 @@ label {
     font-weight: bold;
 }
 
+input[type="text"],
 input[type="email"],
 input[type="password"] {
     padding: 10px;

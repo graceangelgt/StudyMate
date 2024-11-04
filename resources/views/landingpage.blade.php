@@ -22,7 +22,7 @@
       <i class="fas fa-search icon"></i>
       <input type="text" placeholder="Search..">
     </div>
-    <button class="login-button">LOGIN</button>
+    <button class="login-button" onclick="window.location.href='/signin'">SIGN IN</button>
   </div>
   <section class="landing">
     <div class="landing__content">
@@ -32,7 +32,7 @@
         <!-- Tambahan subjudul dan deskripsi yang baru -->
         <p class="landing__description">Join StudyMate to access online study rooms, free and premium resources, and mentor guidance. Stay organized, earn rewards, and reach your study goals effortlessly!</p>
         
-        <a href="#" class="landing__button">Sign Up Now<i class="ri-arrow-right-line"></i></a>
+        <a href="/signup" class="landing__button">Sign Up Now<i class="ri-arrow-right-line"></i></a>
     </div>
     <div class="landing__image">
         <img src="images/stduymate_lp.png" alt="Cupcakes">
@@ -116,7 +116,7 @@
 </html>
 
 <script>
-  const scrollAmount = 100; // Jumlah piksel untuk menggulir
+  const scrollAmount = 300; // Jumlah piksel untuk menggulir
 
   function scrollTestimonials(direction) {
     const container = document.getElementById('testimonialContainer');
