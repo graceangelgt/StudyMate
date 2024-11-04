@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  width: 1280px;
+  width: 100vw;
   height: 3097px;
   position: relative;
   background: white;
@@ -23,8 +23,8 @@ body {
   display: inline-block; /* Agar logo dan teks sejajar */
   vertical-align: middle; /* Mengatur perataan vertikal */
   height: 50px;
-  margin-top: 30px;
-  margin-left: 120px;
+  margin-top: 28px;
+  margin-left: 150px;
 }
 
 .logo-text {
@@ -43,7 +43,7 @@ body {
     display: inline-block;
     margin-left: 300px; /* Menyesuaikan jarak antara StudyMate dan nav links */
     vertical-align: middle; /* Agar nav links sejajar vertikal dengan logo dan teks */
-    margin-top: 13px;
+    margin-top: 10px;
   }
   
   .nav-link {
@@ -64,7 +64,7 @@ body {
     display: flex;
     align-items: center;
     background-color: #6c8691; /* Adjust color to match your design */
-    padding: 8px 18px; /* Adjust padding for a smaller design */
+    padding: 8px 20px; /* Adjust padding for a smaller design */
     border-radius: 20px;
     width: 120px; /* Shortened width */
     vertical-align: middle; /* Align with other elements */
