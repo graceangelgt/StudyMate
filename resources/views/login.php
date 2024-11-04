@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-    <div class="left-panel" style="background-image: url('{{ asset('images/pictlogin.png') }}');">
+    <div class="left-panel">
     <h1>Boost Your Study Productivity with StudyMate!</h1>
     <p>Join StudyMate to access online study rooms, free and premium resources, and mentor guidance. Stay organized, earn rewards, and reach your study goals effortlessly!</p>
 </div>
