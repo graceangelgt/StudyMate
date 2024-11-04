@@ -115,7 +115,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 2rem;
+  padding: 1.5rem 2rem 5rem;
   background: linear-gradient(135deg, #DFEBF7, #AAC7D7); /* Gradient background */
   background-size: cover;
   position: relative;
@@ -131,10 +131,14 @@ body {
   color: #000; /* Warna hitam untuk "Welcome to" */
 }
 
+@font-face {
+  font-family: 'Milky Vintage';
+  src: url('MilkyVintage-Regular.ttf') format('truetype');
+}
 
 .landing__title {
   font-family: 'Milky Vintage', sans-serif;
-  font-size: 7rem;
+  font-size: 6.5rem;
   color: #F46A8B;
   margin-bottom: 1.5rem;
   font-weight: var(--font-medium);
