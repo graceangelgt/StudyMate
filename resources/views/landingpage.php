@@ -67,7 +67,6 @@
   <section class="testimonial" id="testimonial">
   <h2 class="testimonial_title">WHAT PEOPLE SAYS ABOUT US</h2>
   <div class="testimonial-navigation">
-    <button class="nav-button left" onclick="scrollLeft()">&#10094;</button>
     <div class="testimonial-container" id="testimonialContainer">
       <div class="testimonial-card">
         <p class="testimonial-text">
@@ -128,10 +127,6 @@
     } else {
       console.error("Container tidak ditemukan!");
     }
-  }
-
-  function scrollLeft() {
-    scrollTestimonials('left');
   }
 
   function scrollRight() {
