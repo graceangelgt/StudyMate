@@ -1,92 +1,260 @@
 body {
   margin: 0;
-  font-family: sans-serif;
-  background: white;
+  font-family: 'Montserrat', sans-serif;
+  background: #f5f9fc;
 }
 
-.container {
-  width: 1280px;
-  height: 3097px;
-  position: relative;
-  background: white;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 80px;
+  background: #f5f9fc;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.gradient-section-one {
-  width: 1280px;
-  height: 830px;
-  position: absolute;
-  top: 0;
-  background: linear-gradient(180deg, rgba(223, 235, 247, 0.50) 0%, #AAC7D7 100%);
+.logo-section {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  display: inline-block; /* Agar logo dan teks sejajar */
-  vertical-align: middle; /* Mengatur perataan vertikal */
-  height: 50px;
-  margin-top: 30px;
-  margin-left: 120px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 .logo-text {
-  display: inline-block; /* Agar teks dan logo sejajar */
-  font-size: 30px; /* Ukuran font */
-  margin-left: 15px; /* Jarak antara logo dan teks */
-  margin-top: 28px; /* Menurunkan teks */
-  vertical-align: middle; /* Mengatur perataan vertikal */
-  line-height: 70px; /* Sesuaikan tinggi baris dengan tinggi logo untuk perataan */
-  font-family: "Chewy", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  color: #29353C;}
+  font-family: 'Chewy', sans-serif;
+  font-size: 24px;
+  color: #29353C;
+}
 
-  .nav-links {
-    display: inline-block;
-    margin-left: 300px; /* Menyesuaikan jarak antara StudyMate dan nav links */
-    vertical-align: middle; /* Agar nav links sejajar vertikal dengan logo dan teks */
-    margin-top: 13px;
-  }
-  
-  .nav-link {
-    font-family: 'Montserrat', sans-serif; /* Gunakan font Montserrat */
-    font-size: 17px;
-    font-weight: semi-bold;
-    margin-left: 15px; /* Jarak antara About dan Features */
-    text-decoration: none;
-    color: #333; /* Warna teks, sesuaikan dengan kebutuhan */
-    line-height: 70px; /* Menyesuaikan tinggi baris dengan tinggi logo untuk perataan vertikal */
-  }
-  
-  .nav-link:hover {
-    color: #007bff; /* Warna teks saat hover */
-  }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-  .search-bar {
-    display: flex;
-    align-items: center;
-    background-color: #6c8691; /* Adjust color to match your design */
-    padding: 8px 18px; /* Adjust padding for a smaller design */
-    border-radius: 20px;
-    width: 120px; /* Shortened width */
-    vertical-align: middle; /* Align with other elements */
-    margin-top: -53px;
-    margin-left: 180px;
+.nav-link {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #6c8691;
+  padding: 6px 12px;
+  border-radius: 20px;
 }
 
 .search-bar .icon {
-  font-size: 16px;
-  color: #ffffff; /* Set color to white */
+  font-size: 14px;
+  color: #ffffff;
   margin-right: 8px;
 }
 
 .search-bar input {
-    border: none;
-    outline: none;
-    background: none;
-    color: #e0e3e6; /* Adjust color to match your design */
-    font-size: 14px;
-    width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  color: #ffffff;
+  font-size: 14px;
+  width: 80px;
 }
 
 .search-bar input::placeholder {
-    color: #e0e3e6; /* Adjust color to match your design */
+  color: #ffffff;
+}
+
+.login-button {
+  background: none;
+  border: 1px solid #333;
+  padding: 8px 20px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.login-button:hover {
+  background: #333;
+  color: white;
+}
+
+
+/*segmen 1*/
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #DFEBF7, #AAC7D7); /* Gradient background */
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.landing__content {
+  max-width: 50%;
+}
+
+.landing__welcome {
+  color: #000; /* Warna hitam untuk "Welcome to" */
+}
+
+
+.landing__title {
+  font-family: 'Milky Vintage', sans-serif;
+  font-size: 7rem;
+  color: #F46A8B;
+  margin-bottom: 1.5rem;
+  font-weight: var(--font-medium);
+}
+
+.landing__description {
+  font-size: 1.4rem; /* Ukuran lebih kecil dari judul */
+  font-family: sans-serif; /* Font yang menggunakan sans-serif */
+  color: #333; /* Warna teks opsional */
+  margin-bottom: 3rem;
+}
+
+.landing__button {
+  display: inline-flex; /* Ganti inline-block dengan inline-flex */
+  align-items: center; 
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  background-color: #28353D;
+  color: #E0E0E0;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Montserrat';
+}
+
+.landing__button i {
+  margin-left: 5px;
+}
+/* Efek hover untuk tombol */
+.landing__button:hover {
+  transform: scale(1.05); /* Membesarkan sedikit */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Menambahkan shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.landing__image img {
+  max-width: 100%;
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px); /* Naik sedikit */
+  }
+  100% {
+    transform: translateY(0); /* Kembali ke posisi awal */
+  }
+}
+
+/*segmen 2*/
+.features {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.features__title {
+  font-family: 'Chewy', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.feature {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  height: 300px;
+}
+
+.features__flex {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.feature img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.feature__name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.features__bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.features__bottom .feature {
+  margin: 0 80px;
+}
+
+/* Custom background colors for top features */
+.top-feature:nth-child(1) {
+  background-color: rgba(69, 87, 109, 1); /* Full opacity */
+}
+
+.top-feature:nth-child(2) {
+  background-color: rgba(69, 87, 109, 0.8); /* 80% opacity */
+}
+
+.top-feature:nth-child(3) {
+  background-color: rgba(69, 87, 109, 0.6); /* 60% opacity */
+}
+
+/* Custom background colors for bottom features */
+.bottom-feature:nth-child(1) {
+  background-color: rgba(69, 87, 109, 0.4); /* 40% opacity */
+}
+
+.bottom-feature:nth-child(2) {
+  background-color: rgba(69, 87, 109, 0.2); /* 20% opacity */
+}
+
+.feature__button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #45756d;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.feature__button:hover {
+  background-color: #35615c;
+  cursor: pointer;
 }
