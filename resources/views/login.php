@@ -27,7 +27,7 @@
                 
                 <button type="submit" class="signin-button">Sign In</button>
             </form>
-            <p class="register-link">Don't have an account? <a href="#">Register</a></p>
+            <p class="register-link">Don't have an account? <a href="login.php">Sign In</a></p>
         </div>
     </div>
     <script src="{{ asset('js/login.js') }}"></script>
