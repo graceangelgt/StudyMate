@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: white;
+}
+
+.container {
+  width: 1280px;
+  height: 3097px;
+  position: relative;
+  background: white;
+}
+
+.gradient-section-one {
+  width: 1280px;
+  height: 830px;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(180deg, rgba(223, 235, 247, 0.50) 0%, #AAC7D7 100%);
+}
+
+.logo {
+  display: inline-block; /* Agar logo dan teks sejajar */
+  vertical-align: middle; /* Mengatur perataan vertikal */
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.logo-text {
+  display: inline-block; /* Agar teks dan logo sejajar */
+  font-size: 30px; /* Ukuran font */
+  margin-left: 15px; /* Jarak antara logo dan teks */
+  margin-top: 20px; /* Menurunkan teks */
+  vertical-align: middle; /* Mengatur perataan vertikal */
+  line-height: 70px; /* Sesuaikan tinggi baris dengan tinggi logo untuk perataan */
+  font-family: "Modak", system-ui;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
