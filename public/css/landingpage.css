@@ -24,19 +24,69 @@ body {
   vertical-align: middle; /* Mengatur perataan vertikal */
   height: 50px;
   margin-top: 30px;
-  margin-left: 80px;
+  margin-left: 120px;
 }
 
 .logo-text {
   display: inline-block; /* Agar teks dan logo sejajar */
   font-size: 30px; /* Ukuran font */
   margin-left: 15px; /* Jarak antara logo dan teks */
-  margin-top: 20px; /* Menurunkan teks */
+  margin-top: 28px; /* Menurunkan teks */
   vertical-align: middle; /* Mengatur perataan vertikal */
   line-height: 70px; /* Sesuaikan tinggi baris dengan tinggi logo untuk perataan */
-  font-family: "Modak", system-ui;
-  font-weight: 100;
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
   font-style: normal;
+  color: #29353C;}
+
+  .nav-links {
+    display: inline-block;
+    margin-left: 300px; /* Menyesuaikan jarak antara StudyMate dan nav links */
+    vertical-align: middle; /* Agar nav links sejajar vertikal dengan logo dan teks */
+    margin-top: 13px;
+  }
+  
+  .nav-link {
+    font-family: 'Montserrat', sans-serif; /* Gunakan font Montserrat */
+    font-size: 17px;
+    font-weight: semi-bold;
+    margin-left: 15px; /* Jarak antara About dan Features */
+    text-decoration: none;
+    color: #333; /* Warna teks, sesuaikan dengan kebutuhan */
+    line-height: 70px; /* Menyesuaikan tinggi baris dengan tinggi logo untuk perataan vertikal */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Warna teks saat hover */
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #6c8691; /* Adjust color to match your design */
+    padding: 8px 18px; /* Adjust padding for a smaller design */
+    border-radius: 20px;
+    width: 120px; /* Shortened width */
+    vertical-align: middle; /* Align with other elements */
+    margin-top: -53px;
+    margin-left: 180px;
 }
 
+.search-bar .icon {
+  font-size: 16px;
+  color: #ffffff; /* Set color to white */
+  margin-right: 8px;
+}
 
+.search-bar input {
+    border: none;
+    outline: none;
+    background: none;
+    color: #e0e3e6; /* Adjust color to match your design */
+    font-size: 14px;
+    width: 100%;
+}
+
+.search-bar input::placeholder {
+    color: #e0e3e6; /* Adjust color to match your design */
+}
