@@ -15,8 +15,7 @@
         <div class="right-panel">
             <a href="/" class="back-link">← Back</a>
             <h2>Sign Up</h2>
-            <form method="POST" action="/">
-                @csrf
+            <form method="POST" action="signup_process.php"> <!-- Update action URL as needed -->
                 <label for="name">Full Name*</label>
                 <input type="text" id="name" name="name" placeholder="Enter full name" required>
 
@@ -40,6 +39,6 @@
             <p class="signin-link">Already have an account? <a href="/signin">Sign In</a></p>
         </div>
     </div>
-    <script src="js/login.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>

@@ -8,27 +8,26 @@
 </head>
 <body>
     <div class="container">
-    <div class="left-panel">
-    <h1>Boost Your Study Productivity with StudyMate!</h1>
-    <p>Join StudyMate to access online study rooms, free and premium resources, and mentor guidance. Stay organized, earn rewards, and reach your study goals effortlessly!</p>
-</div>
+        <div class="left-panel" style="background-image: url('images/pictlogin.png');">
+            <h1>Boost Your Study Productivity with StudyMate!</h1>
+            <p>Join StudyMate to access online study rooms, free and premium resources, and mentor guidance. Stay organized, earn rewards, and reach your study goals effortlessly!</p>
+        </div>
         <div class="right-panel">
-            <a href="/" class="back-link">← Back</a>
+            <a href="#" class="back-link">← Back</a>
             <h2>Sign In</h2>
-            <form method="POST" action="/">
-                @csrf
+            <form>
                 <label for="email">Email address*</label>
-                <input type="email" id="email" placeholder="Enter email address" required>
+                <input type="email" id="email" name="email" placeholder="Enter email address" required>
                 
                 <label for="password">Password*</label>
                 <div class="password-container">
-                    <input type="password" id="password" placeholder="Enter password" required>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
                     <button type="button" class="toggle-password" onclick="togglePassword()">👁️</button>
                 </div>
                 
                 <button type="submit" class="signin-button">Sign In</button>
             </form>
-            <p class="register-link">Don't have an account? <a href="/signup">Sign Up</a></p>
+            <p class="register-link">Don't have an account? <a href="login.php">Sign In</a></p>
         </div>
     </div>
     <script src="js/login.js"></script>
