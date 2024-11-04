@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyMate Sign Up</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <div class="container">
@@ -15,9 +15,9 @@
         <div class="right-panel">
             <a href="login.php" class="back-link">← Back</a>
             <h2>Sign Up</h2>
-            <form method="POST" action="signup_process.php"> <!-- Update action URL as needed -->
-                <label for="name">Full Name*</label>
-                <input type="text" id="name" name="name" placeholder="Enter full name" required>
+            <form method="POST" action="signup_process.php">
+                <label for="email">Full Name*</label>
+                <input type="email" id="name" name="email" placeholder="Enter email" required>
 
                 <label for="email">Email Address*</label>
                 <input type="email" id="email" name="email" placeholder="Enter email address" required>
@@ -39,6 +39,6 @@
             <p class="signin-link">Already have an account? <a href="login.php">Sign In</a></p>
         </div>
     </div>
-    <script src="login.js"></script>
+    <script src="{{ asset('js/login.js') }s"></script>
 </body>
 </html>

@@ -317,6 +317,116 @@ body {
   transform: scale(1.1);
   animation: bounce 0.5s ease;
 }
+/*Segmen 3*/
+.testimonial {
+  margin-top: 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #28353D, #768A95); /* Gradient background */
+  background-size: cover;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
 
 
+.testimonial_title {
+  font-family: 'Milky Vintage', sans-serif;
+  font-size: 4rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+  color: white;
+}
 
+.testimonial-container::-webkit-scrollbar {
+  display: none; /* Untuk Chrome, Safari, dan Opera */
+}
+
+/* Container untuk testimonial agar bisa di-scroll horizontal */
+.testimonial-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 0 20px; /* Pastikan ada ruang di kiri dan kanan */
+  scrollbar-width: none; /* Untuk Firefox */
+  width: 100%; /* Pastikan kontainer mengisi ruang yang tersedia */
+}
+
+
+/* Testimonial card */
+.testimonial-card {
+  background-color: #3a5068;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  color: #ffffff;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 350px; /* Menyelaraskan tinggi card */
+  min-width: 300px; /* Ukuran minimum setiap kartu */
+  margin: 0 10px; /* Jarak antar kartu */
+}
+
+/* Testimonial text */
+.testimonial-text {
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-style: italic;
+  min-height: 60px; /* Menjaga agar tinggi testimonial text seragam */
+}
+
+/* Image, name, and institution container */
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto; /* Memposisikan info testimonial di bagian bawah */
+}
+
+/* Testimonial image */
+.testimonial-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 10px;
+}
+
+/* Name and institution container */
+.testimonial-details {
+  text-align: center;
+}
+
+/* Name styling */
+.testimonial-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* Institution styling */
+.testimonial-institution {
+  font-size: 0.8rem;
+  color: #dfebf7;
+}
+
+.testimonial-navigation {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem; /* Ukuran panah */
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1; /* Pastikan panah di atas kontainer */
+}

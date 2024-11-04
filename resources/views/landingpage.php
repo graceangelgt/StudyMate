@@ -64,8 +64,73 @@
       <a href="#point-system" class="feature__button">Point System</a>
     </div>
   </div>
+  <section class="testimonial" id="testimonial">
+  <h2 class="testimonial_title">WHAT PEOPLE SAYS ABOUT US</h2>
+  <div class="testimonial-navigation">
+    <div class="testimonial-container" id="testimonialContainer">
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "StudyMate telah membantu saya lebih teratur dalam belajar. Fitur Room Study dan Jadwal Belajar Bersama benar-benar meningkatkan produktivitas saya!"
+        </p>
+        <img src="images/test1.jpg" alt="Maverick Panjaitan" class="testimonial-image">
+        <h3 class="testimonial-name">Maverick Panjaitan</h3>
+        <p class="testimonial-institution">Universitas Indonesia</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          “Fitur Request Mentor sangat bermanfaat! Saya bisa mendapatkan bimbingan langsung dari mentor berpengalaman.”
+        </p>
+        <img src="images/test2.jpg" alt="Haikal Mahendra" class="testimonial-image">
+        <h3 class="testimonial-name">Haikal Mahendra</h3>
+        <p class="testimonial-institution">Institut Teknologi Bandung</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "Fitur jadwal belajar membantu saya untuk tetap konsisten dan fokus setiap hari!"
+        </p>
+        <img src="images/test3.jpg" alt="Edgar Valentino" class="testimonial-image">
+        <h3 class="testimonial-name">Edgar Valentino</h3>
+        <p class="testimonial-institution">Universitas Airlangga</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "Sangat terbantu dengan fitur StudyMate, saya dapat mengatur waktu belajar dengan baik!"
+        </p>
+        <img src="images/test4.jpg" alt="Kartika Pangestu" class="testimonial-image">
+        <h3 class="testimonial-name">Kartika Pangestu</h3>
+        <p class="testimonial-institution">Universitas Gadjah Mada</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "StudyMate membuat saya lebih produktif dengan fitur pengingat jadwal yang luar biasa!"
+        </p>
+        <img src="images/test5.jpg" alt="Miguel Leonardo" class="testimonial-image">
+        <h3 class="testimonial-name">Miguel Leonardo</h3>
+        <p class="testimonial-institution">Universitas Diponegoro</p>
+      </div>
+    </div>
+    <button class="nav-button right" onclick="scrollRight()">&#10095;</button> <!-- Panah Kanan -->
+  </div>
 </section>
-
-
 </body>
 </html>
+
+<script>
+  const scrollAmount = 100; // Jumlah piksel untuk menggulir
+
+  function scrollTestimonials(direction) {
+    const container = document.getElementById('testimonialContainer');
+    if (container) {
+      console.log(`Scrolling ${direction}...`);
+      const scrollValue = direction === 'left' ? -scrollAmount : scrollAmount;
+      container.scrollBy({ left: scrollValue, behavior: 'smooth' });
+    } else {
+      console.error("Container tidak ditemukan!");
+    }
+  }
+
+  function scrollRight() {
+    scrollTestimonials('right');
+  }
+</script>
+
