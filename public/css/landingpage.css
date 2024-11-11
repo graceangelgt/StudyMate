@@ -513,7 +513,7 @@ footer {
   margin-bottom: 15px;
   font-family: 'Jost', sans-serif;
   color: #29353C;
-  padding-left: 40px; /* Menambah ruang di sisi kiri */
+  padding-left: 30px; /* Menambah ruang di sisi kiri */
 }
 
 .footer-section p {
@@ -528,6 +528,7 @@ footer {
 }
 
 .footer-section ul {
+    margin-left: -10px;
     list-style: none;
     text-align: left;
     font-family: 'Jost', sans-serif;
@@ -559,9 +560,10 @@ footer {
 .footer-section .socials a {
     color: #696F79;
     font-size: 1.2em;
-    margin-left: 30px;
+    margin-left: 20px;
     text-decoration: none;
-    font-family: 'Jost', sans-serif
+    font-family: 'Jost', sans-serif;
+    margin-left: 30px;
     
 }
 
