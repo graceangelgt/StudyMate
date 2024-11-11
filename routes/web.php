@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('landingpage');
 });
 
+Route::get('/major', function () {
+    return view('major');
+});
+
 Route::get('/signin', function () {
     return view('login');
 });
