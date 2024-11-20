@@ -69,14 +69,14 @@
 
     <footer>
         <div class="footer-container">
-            <div class="footer-section about">
-                <img src="images/logostudymate.png" alt="StudyMate Logo" class="logof">
-                <span class="logof-text">StudyMate</span>
-                <p>
-                    Join StudyMate to access online study rooms, free and premium resources, and mentor guidance. 
-                    Stay organized, earn rewards, and reach your study goals effortlessly!
-                </p>
-            </div>
+        <div class="footer-section about">
+        <img src="images/logostudymate.png" alt="StudyMate Logo" class="logof">
+        <span class="logof-text">StudyMate</span>
+        <p>
+            Join StudyMate to access online study rooms, free and premium resources, and mentor guidance. 
+            Stay organized, earn rewards, and reach your study goals effortlessly!
+        </p>
+    </div>
             <div class="footer-section links">
                 <h4>GET HELP</h4>
                 <ul>
@@ -114,5 +114,25 @@
             <p>Copyright © 2024 StudyMate | Desain Interaksi Praktikum</p>
         </div>
     </footer>
-</body>
-</html>
+    
+    </body>
+    </html>
+    
+    <script>
+      const scrollAmount = 300; // Jumlah piksel untuk menggulir
+    
+      function scrollTestimonials(direction) {
+        const container = document.getElementById('testimonialContainer');
+        if (container) {
+          console.log(`Scrolling ${direction}...`);
+          const scrollValue = direction === 'left' ? -scrollAmount : scrollAmount;
+          container.scrollBy({ left: scrollValue, behavior: 'smooth' });
+        } else {
+          console.error("Container tidak ditemukan!");
+        }
+      }
+    
+      function scrollRight() {
+        scrollTestimonials('right');
+      }
+    </script>

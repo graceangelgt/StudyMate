@@ -35,61 +35,80 @@
           <div class="room-grid">
             <!-- Room Items -->
             <div class="room-item">
-              <img src="images/modhtml.png" alt="HTML Module">
-              <div class="room-info">
-                <p>Modul HTML</p>
-                <span>Private Room</span>
-                <i class="fas fa-heart"></i>
-              </div>
-            </div>
-            <div class="room-item">
-              <img src="images/modarray.png" alt="Array Module">
-              <div class="room-info">
-                <p>Modul Array</p>
-                <span>Public Room</span>
-              </div>
-            </div>
-            <div class="room-item">
-                <img src="images/modcss.png" alt="Array Module">
+                <div class="room-image-container">
+                  <img src="images/modhtml.png" alt="HTML Module">
+                  <div class="room-text-overlay">Modul HTML</div>
+                </div>
                 <div class="room-info">
-                  <p>Modul CSS</p>
+                  <span>Private Room</span>
+                  <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            <div class="room-item">
+                <div class="room-image-container">
+                  <img src="images/modarray.png" alt="HTML Module">
+                  <div class="room-text-overlay">Modul Array</div>
+                </div>
+                <div class="room-info">
+                  <span>Public Room</span>
+                </div>
+            </div>
+            <div class="room-item">
+                <div class="room-image-container">
+                  <img src="images/modcss.png" alt="HTML Module">
+                  <div class="room-text-overlay">Modul CSS</div>
+                </div>
+                <div class="room-info">
                   <span>Private Room</span>
                 </div>
-              </div>
-              <div class="room-item">
-                <img src="images/modfunct.png" alt="Array Module">
+            </div>
+            <div class="room-item">
+                <div class="room-image-container">
+                  <img src="images/modfunct.png" alt="HTML Module">
+                  <div class="room-text-overlay">Modul Function</div>
+                </div>
                 <div class="room-info">
-                  <p>Modul Function</p>
                   <span>Public Room</span>
                 </div>
-              </div>
-              <div class="room-item">
-                <img src="images/modphp.png" alt="Array Module">
+            </div>
+            <div class="room-item">
+                <div class="room-image-container">
+                  <img src="images/modphp.png" alt="HTML Module">
+                  <div class="room-text-overlay">Modul PHP</div>
+                </div>
                 <div class="room-info">
-                  <p>Modul PHP</p>
                   <span>Public Room</span>
                 </div>
-              </div>
-              <div class="room-item">
+            </div>
+            <div class="room-item">
+                <div class="room-image-container">
+                  <img src="images/moddatb.png" alt="HTML Module">
+                  <div class="room-text-overlay">Modul Database</div>
+                </div>
+                <div class="room-info">
+                  <span>Public Room</span>
+                </div>
+            </div>
+              <!--<div class="room-item">
                 <img src="images/moddatb.png" alt="Array Module">
                 <div class="room-info">
                   <p>Modul Database</p>
                   <span>Public Room</span>
                 </div>
-              </div>
+              </div>-->
           </div>
     </main>
 
     <footer>
         <div class="footer-container">
-            <div class="footer-section about">
-                <img src="images/logostudymate.png" alt="StudyMate Logo" class="logof">
-                <span class="logof-text">StudyMate</span>
-                <p>
-                    Join StudyMate to access online study rooms, free and premium resources, and mentor guidance. 
-                    Stay organized, earn rewards, and reach your study goals effortlessly!
-                </p>
-            </div>
+        <div class="footer-section about">
+        <img src="images/logostudymate.png" alt="StudyMate Logo" class="logof">
+        <span class="logof-text">StudyMate</span>
+        <p>
+            Join StudyMate to access online study rooms, free and premium resources, and mentor guidance. 
+            Stay organized, earn rewards, and reach your study goals effortlessly!
+        </p>
+    </div>
             <div class="footer-section links">
                 <h4>GET HELP</h4>
                 <ul>
@@ -127,5 +146,25 @@
             <p>Copyright © 2024 StudyMate | Desain Interaksi Praktikum</p>
         </div>
     </footer>
-</body>
-</html>
+    
+    </body>
+    </html>
+    
+    <script>
+      const scrollAmount = 300; // Jumlah piksel untuk menggulir
+    
+      function scrollTestimonials(direction) {
+        const container = document.getElementById('testimonialContainer');
+        if (container) {
+          console.log(`Scrolling ${direction}...`);
+          const scrollValue = direction === 'left' ? -scrollAmount : scrollAmount;
+          container.scrollBy({ left: scrollValue, behavior: 'smooth' });
+        } else {
+          console.error("Container tidak ditemukan!");
+        }
+      }
+    
+      function scrollRight() {
+        scrollTestimonials('right');
+      }
+    </script>
