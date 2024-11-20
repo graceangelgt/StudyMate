@@ -21,6 +21,10 @@ Route::get('/major', function () {
     return view('major');
 });
 
+Route::get('/modul', function () {
+    return view('modul');
+});
+
 Route::get('/signin', function () {
     return view('login');
 });

@@ -45,7 +45,7 @@
   <div class="features__flex">
     <div class="feature top-feature">
       <img src="images/c1.png" alt="Room Study">
-      <a href="#room-study" class="feature__button">Room Study</a>
+      <a href="/major" class="feature__button">Room Study</a>
     </div>
     <div class="feature top-feature">
       <img src="images/c2.png" alt="Request Mentor">
