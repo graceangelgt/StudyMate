@@ -9,32 +9,36 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo-section">
-            <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
-            <span class="logo-text">StudyMate</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Features</a></li>
-                <li><input type="text" placeholder="Search..."></li>
-                <li><a href="#">0 Point</a></li>
-                <li><a href="#">USER</a></li>
-            </ul>
-        </nav>
+  <div class="navbar">
+    <div class="logo-section">
+      <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
+      <span class="logo-text">StudyMate</span>
     </div>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
+    </div>
+    <div class="search-bar">
+      <i class="fas fa-search icon"></i>
+      <input type="text" placeholder="Search..">
+    </div>
+    <button class="login-button" onclick="window.location.href='/signin'">SIGN IN</button>
+  </div>
 
     <main>
-        <div class="breadcrumbs">
-            <p>All Room &gt; Sistem Informasi &gt; Subject</p>
+
+      <div class="header-container">
+          <div class="breadcrumbs">
+              <p>All Room &gt; Sistem Informasi &gt; Subject</p>
           </div>
           <div class="room-header">
-            <button class="add-module-btn">+ Add New Module</button>
+              <button class="add-module-btn">+ Add New Module</button>
           </div>
+      </div>
+      
           <div class="room-grid">
             <!-- Room Items -->
-            <div class="room-item">
+            <a href="/token" class="room-item">
                 <div class="room-image-container">
                   <img src="images/modhtml.png" alt="HTML Module">
                   <div class="room-text-overlay">Modul HTML</div>
@@ -43,7 +47,7 @@
                   <span>Private Room</span>
                   <i class="fas fa-heart"></i>
                 </div>
-            </div>
+            </a>
             <div class="room-item">
                 <div class="room-image-container">
                   <img src="images/modarray.png" alt="HTML Module">
@@ -53,7 +57,7 @@
                   <span>Public Room</span>
                 </div>
             </div>
-            <div class="room-item">
+            <a href="/token" class="room-item">
                 <div class="room-image-container">
                   <img src="images/modcss.png" alt="HTML Module">
                   <div class="room-text-overlay">Modul CSS</div>
@@ -61,7 +65,7 @@
                 <div class="room-info">
                   <span>Private Room</span>
                 </div>
-            </div>
+            </a>
             <div class="room-item">
                 <div class="room-image-container">
                   <img src="images/modfunct.png" alt="HTML Module">

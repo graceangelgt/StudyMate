@@ -11,27 +11,29 @@
 <body>
     <div class="navbar">
         <div class="logo-section">
-            <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
-            <span class="logo-text">StudyMate</span>
+          <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
+          <span class="logo-text">StudyMate</span>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Features</a></li>
-                <li><input type="text" placeholder="Search..."></li>
-                <li><a href="#">0 Point</a></li>
-                <li><a href="#">USER</a></li>
-            </ul>
-        </nav>
-    </div>
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
+        </div>
+        <div class="search-bar">
+          <i class="fas fa-search icon"></i>
+          <input type="text" placeholder="Search..">
+        </div>
+        <button class="login-button" onclick="window.location.href='/signin'">SIGN IN</button>
+      </div>
 
     <main>
-        <h1>All Room &gt; Major</h1>
+        <div class="breadcrumbs">
+            <p>All Room &gt; Major
+          </div>
         <div class="room-grid">
-            <div class="room-item">
+            <a href="/modul" class="room-item">
                 <img src="images/SI.png" alt="Image description">
-                <div class="label">Sistem</div>
-            </div>            
+                <div class="label">Sistem Informasi</div>
+            </a>            
             <div class="room-item">
                 <img src="images/FIS.png" alt="Image description">
                 <div class="label">Fisika</div>

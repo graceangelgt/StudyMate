@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StudyMate</title>
-  <link rel="stylesheet" href="css/token.css">
+  <link rel="stylesheet" href="css/pilihjadwal.css">
   <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <div class="navbar">
         <div class="logo-section">
           <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
@@ -25,26 +26,71 @@
         <button class="login-button" onclick="window.location.href='/signin'">SIGN IN</button>
       </div>
 
+    <!-- Content -->
     <main>
         <div class="breadcrumbs">
             <p><span>All Room </span> &gt; 
                 <span> Sistem Informasi </span> &gt; 
-                <span> Subject </span> </p>
+                <span> Modul HTML </span> &gt;
+                <span> Pilih Jadwal </span> </p>
         </div>
-        <div class="module-container">
-            <h2>Modul HTML</h2>
-            <p class="private-room">Private Room</p>
-            <form action="/pilihjadwal" method="GET">
-                @csrf
-                <div class="token-input">
-                    <label for="token">Input Token To Access This Module</label>
-                    <input type="text" id="token" name="token" placeholder="Type Here" required>
-                    <button type="submit" class="button">Submit</button>
-                </div>
-            </form>            
+        <h1 class="page-title">Modul HTML</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search schedule available">
         </div>
+
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Room Name</th>
+                    <th>Schedule</th>
+                    <th>Total Participant</th>
+                    <th>Status</th>
+                    <th>Pick Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Genius_People</td>
+                    <td>16.40 - 18.30 WIB</td>
+                    <td>12/12</td>
+                    <td class="status full">FULL</td>
+                    <td><button class="disabled">Join Room</button></td>
+                </tr>
+                <tr>
+                    <td>Nah, We'd WIN</td>
+                    <td>16.40 - 18.30 WIB</td>
+                    <td>8/10</td>
+                    <td class="status avail">AVAIL</td>
+                    <td><button class="active">Join Room</button></td>
+                </tr>
+                <tr>
+                    <td>girlsonly</td>
+                    <td>16.40 - 18.30 WIB</td>
+                    <td>9/10</td>
+                    <td class="status avail">AVAIL</td>
+                    <td><button class="active">Join Room</button></td>
+                </tr>
+                <tr>
+                    <td>12SeniorHigh</td>
+                    <td>16.40 - 18.30 WIB</td>
+                    <td>36/40</td>
+                    <td class="status avail">AVAIL</td>
+                    <td><button class="active">Join Room</button></td>
+                </tr>
+                <tr>
+                    <td>Lover_Man</td>
+                    <td>16.40 - 18.30 WIB</td>
+                    <td>6/6</td>
+                    <td class="status full">FULL</td>
+                    <td><button class="disabled">Join Room</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div><br><br><br><br></div>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
         <div class="footer-section about">
@@ -92,25 +138,5 @@
             <p>Copyright © 2024 StudyMate | Desain Interaksi Praktikum</p>
         </div>
     </footer>
-    
-    </body>
-    </html>
-    
-    <script>
-      const scrollAmount = 300; // Jumlah piksel untuk menggulir
-    
-      function scrollTestimonials(direction) {
-        const container = document.getElementById('testimonialContainer');
-        if (container) {
-          console.log(`Scrolling ${direction}...`);
-          const scrollValue = direction === 'left' ? -scrollAmount : scrollAmount;
-          container.scrollBy({ left: scrollValue, behavior: 'smooth' });
-        } else {
-          console.error("Container tidak ditemukan!");
-        }
-      }
-    
-      function scrollRight() {
-        scrollTestimonials('right');
-      }
-    </script>
+</body>
+</html>

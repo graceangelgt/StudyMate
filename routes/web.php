@@ -29,6 +29,14 @@ Route::get('/token', function () {
     return view('token');
 });
 
+Route::get('/pilihjadwal', function () {
+    return view('pilihjadwal');
+});
+
+Route::get('/liveroom', function () {
+    return view('liveroom');
+});
+
 Route::get('/signin', function () {
     return view('login');
 });
