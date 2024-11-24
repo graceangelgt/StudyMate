@@ -34,65 +34,68 @@
                     <span>Apps</span>
                 </button>
             </div>
-            
         </div>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <!-- Whiteboard Area -->
-            <canvas id="whiteboard" width="800" height="400"></canvas>
+       <!-- Main Content -->
+<div class="main-content">
+    <!-- Whiteboard Area -->
+    <div class="whiteboard-container">
+        <canvas id="whiteboard" width="800" height="400"></canvas>
+        <div class="tutoring-image-overlay">
+            <img src="images/liveroom.png" alt="Tutoring Session">
+        </div>
+    </div>
 
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <!-- Participants Section -->
-                <div class="participants-section">
-                    <h3>Participants</h3>
-                    <div class="participant">
-                        <img src="images/avatar1.png" alt="Avatar">
-                        <span>Natura</span>
-                        <span class="role">Host</span>
-                    </div>
-                    <div class="participant">
-                        <img src="images/avatar2.jpg" alt="Avatar">
-                        <span>Cecile</span>
-                        <span class="role">Co-Host</span>
-                    </div>
-                </div>
-
-                <!-- Chat Section -->
-                <div class="chat-section">
-                    <h3>Chats</h3>
-                    <div class="chat-message">from Marry to Everyone: Info soal HTML</div>
-                    <div class="chat-input">
-                        <input type="text" placeholder="Message to everyone...">
-                        <button>Send</button>
-                    </div>
-                </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Participants Section -->
+        <div class="participants-section">
+            <h3>Participants</h3>
+            <div class="participant">
+                <img src="images/avatar1.png" alt="Avatar">
+                <span>Natura</span>
+                <span class="role">Host</span>
+            </div>
+            <div class="participant">
+                <img src="images/avatar1.png" alt="Avatar">
+                <span>Cecile</span>
+                <span class="role">Co-Host</span>
             </div>
         </div>
 
-        <!-- Bottom Controls -->
-        <div class="controls">
-            <button>Mute</button>
-            <button>Video</button>
-            <button>Share Screen</button>
-            <button>Whiteboard</button>
-            <button class="leave-meeting">Leave Meeting</button>
-
-            <!-- Reaction Buttons -->
-            <div class="reactions">
-                <button class="reaction-btn">👍</button>
-                <button class="reaction-btn">👏</button>
-                <button class="reaction-btn">🎉</button>
-                <button class="reaction-btn">🤔</button>
+        <!-- Chat Section -->
+        <div class="chat-section">
+            <h3>Chats</h3>
+            <div class="chat-message">from Marry to Everyone: Info soal HTML</div>
+            <div class="chat-input">
+                <input type="text" placeholder="Message to everyone...">
+                <button>Send</button>
             </div>
         </div>
+    </div>
+</div>
 
-        <!-- Background Music Control -->
-        <audio id="bg-music" loop>
-            <source src="audio/background.mp3" type="audio/mp3">
-        </audio>
-        <button id="toggle-music-btn">🎵 Toggle Music</button>
+       <!-- Bottom Controls -->
+<div class="controls">
+    <div class="left-controls">
+        <button class="control-btn leave-meeting">
+            <i class="fas fa-sign-out-alt"></i>
+        </button>
+    </div>
+    <div class="center-controls">
+        <button class="control-btn"><i class="fas fa-microphone"></i></button>
+        <button class="control-btn"><i class="fas fa-video"></i></button>
+        <button class="control-btn"><i class="fas fa-desktop"></i></button>
+        <button class="control-btn"><i class="fas fa-chalkboard"></i></button>
+    </div>
+    <div class="reactions">
+        <button class="reaction-btn">👍</button>
+        <button class="reaction-btn">👏</button>
+        <button class="reaction-btn">🎉</button>
+        <button class="reaction-btn">🤔</button>
+    </div>
+</div>
+
     </div>
 
     <!-- Inline JavaScript -->
@@ -130,20 +133,6 @@
         // Example Notifications
         showNotification('Natura has joined the meeting');
         showNotification('Cecile left the meeting');
-
-        // Background Music Control
-        const bgMusic = document.getElementById('bg-music');
-        const toggleMusicBtn = document.getElementById('toggle-music-btn');
-
-        toggleMusicBtn.addEventListener('click', () => {
-            if (bgMusic.paused) {
-                bgMusic.play();
-                toggleMusicBtn.textContent = '🎵 Pause Music';
-            } else {
-                bgMusic.pause();
-                toggleMusicBtn.textContent = '🎵 Play Music';
-            }
-        });
     </script>
 </body>
 </html>

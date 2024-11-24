@@ -78,30 +78,6 @@ body {
     font-size: 16px;
 }
 
-/* Responsive Adjustments (Optional) */
-@media (max-width: 768px) {
-    .navbar-right {
-        flex-wrap: wrap; /* Bikin elemen membungkus jika ruang sempit */
-        gap: 10px;
-    }
-
-    .recording {
-        font-size: 12px;
-    }
-
-    .navbar-button {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
-}
-
-
-
-.recording {
-    color: red;
-    font-weight: bold;
-}
-
 /* Notifications */
 #notifications {
     position: fixed;
@@ -133,12 +109,36 @@ body {
     flex: 1;
 }
 
-#whiteboard {
+/* Whiteboard Container */
+.whiteboard-container {
+    position: relative;
     flex: 3;
     background-color: #1e1e1e;
     border-right: 2px solid #444;
-    display: block;
 }
+
+#whiteboard {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+}
+
+/* Tutoring Image Overlay */
+.tutoring-image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Make sure image appears above the whiteboard */
+}
+
+.tutoring-image-overlay img {
+    width: 800px; /* Set the size of the image */
+    height: 400px;
+    object-fit: cover; /* Ensure the image fits inside the container */
+}
+
 
 /* Sidebar */
 .sidebar {
@@ -158,7 +158,7 @@ body {
 .participant {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .participant img {
@@ -198,85 +198,91 @@ body {
 }
 
 .chat-input button {
-    padding: 10px;
+    padding: 10px 15px;
+    background-color: #444;
     border: none;
     border-radius: 0 5px 5px 0;
-    background-color: #444;
     color: #fff;
-    font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.chat-input button:hover {
-    background-color: #555;
-}
-
-/* Controls */
+/* Bottom Controls */
 .controls {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Mengatur jarak antar grup */
     align-items: center;
-    background-color: #1a1a1a;
-    padding: 10px;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    background-color: #222;
 }
 
-.controls button {
-    padding: 10px 20px;
-    margin: 0 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #444;
-    color: #fff;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* Left Controls (Leave Meeting) */
+.left-controls {
+    display: flex;
+    align-items: center;
 }
 
-.controls button:hover {
-    background-color: #555;
+/* Center Controls (Tombol lain di tengah) */
+.center-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-grow: 1; /* Tombol di tengah mengambil ruang yang tersedia */
 }
 
-.leave-meeting {
-    background-color: red;
-    font-weight: bold;
-}
-
-/* Reaction Buttons */
+/* Reaction Buttons (di kiri) */
 .reactions {
-    margin-left: 20px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
 
 .reaction-btn {
-    background: #444;
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    margin: 0 5px;
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.3s;
-}
-
-.reaction-btn:hover {
-    transform: scale(1.2);
-    background-color: #555;
-}
-
-/* Music Button */
-#toggle-music-btn {
-    margin: 10px;
-    padding: 10px 20px;
     background-color: #444;
-    color: #fff;
     border: none;
-    border-radius: 5px;
+    padding: 8px 10px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-#toggle-music-btn:hover {
+.reaction-btn:hover {
     background-color: #555;
+}
+
+/* Control Buttons */
+.control-btn {
+    background-color: #444;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+    background-color: #555;
+}
+
+/* Leave Meeting Button (diletakkan di kiri) */
+.leave-meeting {
+    background-color: #e74c3c;
+}
+
+.leave-meeting:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .center-controls {
+        flex-grow: unset; /* Reset agar tombol-tombol di tengah tidak memenuhi seluruh lebar */
+    }
 }
