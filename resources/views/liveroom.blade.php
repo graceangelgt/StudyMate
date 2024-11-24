@@ -40,7 +40,7 @@
 <div class="main-content">
     <!-- Whiteboard Area -->
     <div class="whiteboard-container">
-        <canvas id="whiteboard" width="800" height="400"></canvas>
+        <canvas id="whiteboard" width="900" height="500"></canvas>
         <div class="tutoring-image-overlay">
             <img src="images/liveroom.png" alt="Tutoring Session">
         </div>
