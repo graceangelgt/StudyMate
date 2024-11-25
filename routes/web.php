@@ -53,3 +53,7 @@ Route::post('/', function () {
     // Tangani logika pendaftaran di sini
     return view('landingpage'); // Kembali ke halaman landing page setelah signup
 });
+
+Route::get('/shareroom', function () {
+    return view('shareroom');
+});
