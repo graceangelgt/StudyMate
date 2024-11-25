@@ -19,7 +19,8 @@
                 <i class="fas fa-home"></i>
                 <i class="fas fa-user-friends"></i>
                 <i class="fas fa-cog"></i>
-            </div>
+                <a href="/shareroom"><i class="fas fa-share-alt"></i></a>
+            </div>            
             <div class="navbar-right">
                 <div class="recording">
                     <i class="fas fa-dot-circle"></i>

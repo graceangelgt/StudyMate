@@ -12,23 +12,19 @@
     <!-- Header -->
     <div class="navbar">
         <a href="/" class="logo-section">
-            <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
-            <span class="logo-text">StudyMate</span>
+          <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
+          <span class="logo-text">StudyMate</span>
         </a>
-        <div class="nav-links">
-          <a href="#about" class="nav-link">About</a>
-          <a href="/#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
+          <div class="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#/features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
+          </div>
+          <div class="search-bar">
+            <i class="fas fa-search icon"></i>
+            <input type="text" placeholder="Search..">
+          </div>
+          <button class="login-button" onclick="window.location.href='/signin'">SIGN IN</button>
         </div>
-        <div class="search-bar">
-          <i class="fas fa-search icon"></i>
-          <input type="text" placeholder="Search..">
-        </div>
-        <div class="user-info">
-          <span class="points">0 Point</span>
-          <i class="fas fa-user-circle user-icon"></i>
-          <span class="username">USER</span>
-        </div>
-    </div>
 
 <main>
     <div class="breadcrumb">

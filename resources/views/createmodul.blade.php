@@ -35,7 +35,7 @@
         </div>
     <div class="create-modul">
       <h2>Create New Modul</h2>
-      <form>
+      <form action="/modul">
         <div class="form-group">
           <label for="modul-name">Modul Name:</label>
           <input type="text" id="modul-name" placeholder="Enter Modul Name" required>

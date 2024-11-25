@@ -25,6 +25,10 @@ Route::get('/modul', function () {
     return view('modul');
 });
 
+Route::post('/modul', function () {
+    return view('modul');
+});
+
 Route::get('/token', function () {
     return view('token');
 });
