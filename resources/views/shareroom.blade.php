@@ -27,10 +27,10 @@
         </div>
 
 <main>
-    <div class="breadcrumb">
-        <a href="/all-room" class="breadcrumb-link">All Room</a> &gt; 
-        <a href="/system-information" class="breadcrumb-link">Sistem Informasi</a> &gt; 
-        <span class="breadcrumb-current">Subject</span>
+    <div class="breadcrumbs">
+        <p><span>All Room </span> &gt; 
+            <span> Sistem Informasi </span> &gt; 
+            <span> Create Modul </span> </p>
     </div>
 
     <div class="room-created">
