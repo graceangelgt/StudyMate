@@ -10,13 +10,13 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="logo-section">
-          <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
-          <span class="logo-text">StudyMate</span>
-        </div>
+        <a href="/" class="logo-section">
+            <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
+            <span class="logo-text">StudyMate</span>
+        </a>
         <div class="nav-links">
-          <a href="#about" class="nav-link">About</a>
-          <a href="#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="/#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
         </div>
         <div class="search-bar">
           <i class="fas fa-search icon"></i>
@@ -69,7 +69,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer id="about">
         <div class="footer-container">
         <div class="footer-section about">
         <img src="images/logostudymate.png" alt="StudyMate Logo" class="logof">

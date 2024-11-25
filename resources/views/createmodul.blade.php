@@ -4,19 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StudyMate</title>
-  <link rel="stylesheet" href="css/token.css">
+  <link rel="stylesheet" href="css/createmodul.css">
   <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <div class="navbar">
-      <a href="/" class="logo-section">
-        <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
-        <span class="logo-text">StudyMate</span>
-      </a>
+        <a href="/" class="logo-section">
+            <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
+            <span class="logo-text">StudyMate</span>
+        </a>
         <div class="nav-links">
           <a href="#about" class="nav-link">About</a>
-          <a href="#/features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
+          <a href="/#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
         </div>
         <div class="search-bar">
           <i class="fas fa-search icon"></i>
@@ -25,26 +26,45 @@
         <button class="login-button" onclick="window.location.href='/signin'">SIGN IN</button>
       </div>
 
+    <!-- Content -->
     <main>
         <div class="breadcrumbs">
             <p><span>All Room </span> &gt; 
                 <span> Sistem Informasi </span> &gt; 
-                <span> Subject </span> </p>
+                <span> Create Modul </span> </p>
         </div>
-        <div class="module-container">
-            <h2>Modul HTML</h2>
-            <p class="private-room">Private Room</p>
-            <form action="/pilihjadwal" method="GET">
-                @csrf
-                <div class="token-input">
-                    <label for="token">Input Token To Access This Module</label>
-                    <input type="text" id="token" name="token" placeholder="Type Here" required>
-                    <button type="submit" class="button">Submit</button>
-                </div>
-            </form>            
+    <div class="create-modul">
+      <h2>Create New Modul</h2>
+      <form>
+        <div class="form-group">
+          <label for="modul-name">Modul Name:</label>
+          <input type="text" id="modul-name" placeholder="Enter Modul Name" required>
         </div>
-    </main>
+        <div class="form-group">
+          <label for="major">Major:</label>
+          <input type="text" id="major" placeholder="Enter Major" required>
+        </div>
+        <div class="form-group">
+          <label>Visibility:</label>
+          <div>
+            <label><input type="radio" name="visibility" value="private" checked> Private Room</label>
+            <label><input type="radio" name="visibility" value="public"> Public Room</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Time:</label>
+          <input type="time" id="time" required>
+        </div><br>
+        <button type="submit">Create</button>
+      </form>
+    </div>
+  </main><br><br><br>
 
+    <!-- Footer -->
     <footer id="about">
         <div class="footer-container">
         <div class="footer-section about">
@@ -92,25 +112,5 @@
             <p>Copyright © 2024 StudyMate | Desain Interaksi Praktikum</p>
         </div>
     </footer>
-    
-    </body>
-    </html>
-    
-    <script>
-      const scrollAmount = 300; // Jumlah piksel untuk menggulir
-    
-      function scrollTestimonials(direction) {
-        const container = document.getElementById('testimonialContainer');
-        if (container) {
-          console.log(`Scrolling ${direction}...`);
-          const scrollValue = direction === 'left' ? -scrollAmount : scrollAmount;
-          container.scrollBy({ left: scrollValue, behavior: 'smooth' });
-        } else {
-          console.error("Container tidak ditemukan!");
-        }
-      }
-    
-      function scrollRight() {
-        scrollTestimonials('right');
-      }
-    </script>
+</body>
+</html>

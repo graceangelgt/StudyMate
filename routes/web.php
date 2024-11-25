@@ -37,6 +37,10 @@ Route::get('/liveroom', function () {
     return view('liveroom');
 });
 
+Route::get('/createmodul', function () {
+    return view('createmodul');
+});
+
 Route::get('/signin', function () {
     return view('login');
 });

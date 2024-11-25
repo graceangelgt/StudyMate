@@ -11,13 +11,13 @@
 <body>
     <!-- Header -->
     <div class="navbar">
-        <div class="logo-section">
-          <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
-          <span class="logo-text">StudyMate</span>
-        </div>
+        <a href="/" class="logo-section">
+            <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
+            <span class="logo-text">StudyMate</span>
+        </a>
         <div class="nav-links">
           <a href="#about" class="nav-link">About</a>
-          <a href="#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
+          <a href="/#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
         </div>
         <div class="search-bar">
           <i class="fas fa-search icon"></i>
@@ -62,21 +62,21 @@
                     <td>16.40 - 18.30 WIB</td>
                     <td>8/10</td>
                     <td class="status avail">AVAIL</td>
-                    <td><button class="active">Join Room</button></td>
+                    <td><a href="/liveroom"><button class="active">Join Room</button></a></td>
                 </tr>
                 <tr>
                     <td>girlsonly</td>
                     <td>16.40 - 18.30 WIB</td>
                     <td>9/10</td>
                     <td class="status avail">AVAIL</td>
-                    <td><button class="active">Join Room</button></td>
+                    <td><a href="/liveroom"><button class="active">Join Room</button></a></td>
                 </tr>
                 <tr>
                     <td>12SeniorHigh</td>
                     <td>16.40 - 18.30 WIB</td>
                     <td>36/40</td>
                     <td class="status avail">AVAIL</td>
-                    <td><button class="active">Join Room</button></td>
+                    <td><a href="/liveroom"><button class="active">Join Room</button></a></td>
                 </tr>
                 <tr>
                     <td>Lover_Man</td>
@@ -91,7 +91,7 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer id="about">
         <div class="footer-container">
         <div class="footer-section about">
         <img src="images/logostudymate.png" alt="StudyMate Logo" class="logof">

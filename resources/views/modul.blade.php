@@ -10,14 +10,14 @@
 </head>
 <body>
   <div class="navbar">
-    <div class="logo-section">
+    <a href="/" class="logo-section">
       <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
       <span class="logo-text">StudyMate</span>
-    </div>
+    </a>
     <div class="nav-links">
       <a href="#about" class="nav-link">About</a>
-      <a href="#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
-    </div>
+      <a href="/#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
+  </div>
     <div class="search-bar">
       <i class="fas fa-search icon"></i>
       <input type="text" placeholder="Search..">
@@ -32,7 +32,7 @@
               <p>All Room &gt; Sistem Informasi &gt; Subject</p>
           </div>
           <div class="room-header">
-              <button class="add-module-btn">+ Add New Module</button>
+              <a href="/createmodul"><button class="add-module-btn">+ Add New Module</button></a>
           </div>
       </div>
       
@@ -48,7 +48,7 @@
                   <i class="fas fa-heart"></i>
                 </div>
             </a>
-            <div class="room-item">
+            <a href="/pilihjadwal" class="room-item">
                 <div class="room-image-container">
                   <img src="images/modarray.png" alt="HTML Module">
                   <div class="room-text-overlay">Modul Array</div>
@@ -56,7 +56,7 @@
                 <div class="room-info">
                   <span>Public Room</span>
                 </div>
-            </div>
+            </a>
             <a href="/token" class="room-item">
                 <div class="room-image-container">
                   <img src="images/modcss.png" alt="HTML Module">
@@ -66,7 +66,7 @@
                   <span>Private Room</span>
                 </div>
             </a>
-            <div class="room-item">
+            <a href="/pilihjadwal" class="room-item">
                 <div class="room-image-container">
                   <img src="images/modfunct.png" alt="HTML Module">
                   <div class="room-text-overlay">Modul Function</div>
@@ -74,8 +74,8 @@
                 <div class="room-info">
                   <span>Public Room</span>
                 </div>
-            </div>
-            <div class="room-item">
+            </a>
+            <a href="/pilihjadwal" class="room-item">
                 <div class="room-image-container">
                   <img src="images/modphp.png" alt="HTML Module">
                   <div class="room-text-overlay">Modul PHP</div>
@@ -83,8 +83,8 @@
                 <div class="room-info">
                   <span>Public Room</span>
                 </div>
-            </div>
-            <div class="room-item">
+            </a>
+            <a href="/pilihjadwal" class="room-item">
                 <div class="room-image-container">
                   <img src="images/moddatb.png" alt="HTML Module">
                   <div class="room-text-overlay">Modul Database</div>
@@ -92,7 +92,7 @@
                 <div class="room-info">
                   <span>Public Room</span>
                 </div>
-            </div>
+            </a>
               <!--<div class="room-item">
                 <img src="images/moddatb.png" alt="Array Module">
                 <div class="room-info">
@@ -103,7 +103,7 @@
           </div>
     </main>
 
-    <footer>
+    <footer id="about">
         <div class="footer-container">
         <div class="footer-section about">
         <img src="images/logostudymate.png" alt="StudyMate Logo" class="logof">
