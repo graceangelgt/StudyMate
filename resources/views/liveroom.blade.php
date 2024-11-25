@@ -101,25 +101,49 @@
 
     <!-- Inline JavaScript -->
     <script>
-        // Whiteboard Setup
         const canvas = document.getElementById('whiteboard');
-        const ctx = canvas.getContext('2d');
-        let drawing = false;
+const ctx = canvas.getContext('2d');
+const overlayImage = document.querySelector('.tutoring-image-overlay img');
 
-        canvas.addEventListener('mousedown', () => (drawing = true));
-        canvas.addEventListener('mouseup', () => (drawing = false));
-        canvas.addEventListener('mousemove', draw);
+let drawing = false;
 
-        function draw(event) {
-            if (!drawing) return;
-            ctx.lineWidth = 2;
-            ctx.lineCap = 'round';
-            ctx.strokeStyle = '#fff';
-            ctx.lineTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
-            ctx.stroke();
-            ctx.beginPath();
-            ctx.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
-        }
+// Konfigurasi ukuran canvas agar sesuai dengan overlay
+function resizeCanvas() {
+    canvas.width = overlayImage.clientWidth;
+    canvas.height = overlayImage.clientHeight;
+}
+resizeCanvas();
+
+// Fungsi menggambar
+function draw(event) {
+    if (!drawing) return;
+
+    // Hitung posisi kursor relatif terhadap kanvas
+    const rect = canvas.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+
+    ctx.lineWidth = 2;
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = '#fff'; // Warna garis
+
+    ctx.lineTo(x, y);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+}
+
+// Event listeners untuk menggambar
+canvas.addEventListener('mousedown', () => {
+    drawing = true;
+    ctx.beginPath(); // Mulai path baru
+});
+canvas.addEventListener('mouseup', () => (drawing = false));
+canvas.addEventListener('mousemove', draw);
+
+// Pastikan kanvas dire-size ulang jika ukuran window berubah
+window.addEventListener('resize', resizeCanvas);
+
 
         // Notification Function
         function showNotification(message) {
@@ -152,6 +176,17 @@
         // Hapus elemen setelah animasi selesai
         effect.addEventListener('animationend', () => effect.remove());
     });
+});
+
+    // Menambahkan event listener untuk tombol mikrofon
+document.querySelector('.control-btn i.fas.fa-microphone').addEventListener('click', function() {
+    // Toggle class untuk mengubah warna tombol
+    this.classList.toggle('mic-active');
+});
+// Menambahkan event listener untuk tombol kamera
+document.querySelector('.control-btn i.fas.fa-video').addEventListener('click', function() {
+    // Toggle class untuk mengubah warna tombol dan menambah garis diagonal
+    this.classList.toggle('video-active');
 });
 
     </script>
