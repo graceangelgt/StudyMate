@@ -286,3 +286,20 @@ body {
         flex-grow: unset; /* Reset agar tombol-tombol di tengah tidak memenuhi seluruh lebar */
     }
 }
+.reaction-effect {
+    position: absolute;
+    animation: floatUp 1.5s ease-out forwards;
+    font-size: 20px;
+    pointer-events: none; /* Agar tidak mengganggu klik tombol */
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}

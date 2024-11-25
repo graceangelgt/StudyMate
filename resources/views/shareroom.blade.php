@@ -43,7 +43,7 @@
                 <input type="text" value="https://cssmodule.roomstudy.com" readonly>
                 <i class="fas fa-copy copy-icon"></i>
             </div>
-            <button class="join-room-button">Join Room Study</button>
+            <a href="/liveroom"><button class="join-room-button">Join Room Study</button></a>
         </div>
     </div>
 </main>
