@@ -78,9 +78,9 @@
        <!-- Bottom Controls -->
 <div class="controls">
     <div class="left-controls">
-        <button class="control-btn leave-meeting">
+        <a href="/pilihjadwal" class="control-btn leave-meeting">
             <i class="fas fa-sign-out-alt"></i>
-        </button>
+        </a>
     </div>
     <div class="center-controls">
         <button class="control-btn"><i class="fas fa-microphone"></i></button>
