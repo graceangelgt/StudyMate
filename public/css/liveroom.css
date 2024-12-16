@@ -286,3 +286,58 @@ body {
         flex-grow: unset; /* Reset agar tombol-tombol di tengah tidak memenuhi seluruh lebar */
     }
 }
+.reaction-effect {
+    position: absolute;
+    animation: floatUp 1.5s ease-out forwards;
+    font-size: 20px;
+    pointer-events: none; /* Agar tidak mengganggu klik tombol */
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+
+/* CSS untuk tombol mikrofon yang aktif (warna merah dan garis diagonal) */
+.mic-active {
+    color: red;
+    border-color: red;
+    position: relative; /* Membutuhkan positioning agar pseudo-element dapat ditempatkan dengan benar */
+}
+
+.mic-active::after {
+    content: ''; /* Membuat elemen kosong */
+    position: absolute; /* Agar bisa ditempatkan di atas ikon */
+    top: 0; /* Posisi vertikal dari atas */
+    left: 0; /* Posisi horizontal dari kiri */
+    width: 150%; /* Garis sepanjang lebar tombol */
+    height: 2px; /* Ketebalan garis */
+    background-color: red; /* Warna garis */
+    transform: rotate(45deg); /* Memutar garis sehingga menjadi diagonal */
+    transform-origin: bottom left; /* Menentukan titik asal rotasi */
+}
+
+/* CSS untuk tombol kamera yang aktif (warna merah dan garis diagonal) */
+.video-active {
+    color: red;
+    border-color: red;
+    position: relative; /* Membutuhkan positioning agar pseudo-element dapat ditempatkan dengan benar */
+}
+
+.video-active::after {
+    content: ''; /* Membuat elemen kosong */
+    position: absolute; /* Agar bisa ditempatkan di atas ikon */
+    top: 0; /* Posisi vertikal dari atas */
+    left: 0; /* Posisi horizontal dari kiri */
+    width: 110%; /* Garis sepanjang lebar tombol */
+    height: 2px; /* Ketebalan garis */
+    background-color: red; /* Warna garis */
+    transform: rotate(45deg); /* Memutar garis sehingga menjadi diagonal */
+    transform-origin: bottom left; /* Menentukan titik asal rotasi */
+}

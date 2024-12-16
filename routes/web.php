@@ -25,6 +25,10 @@ Route::get('/modul', function () {
     return view('modul');
 });
 
+Route::post('/modul', function () {
+    return view('modul');
+});
+
 Route::get('/token', function () {
     return view('token');
 });
@@ -42,11 +46,15 @@ Route::get('/createmodul', function () {
 });
 
 Route::get('/signin', function () {
-    return view('login');
+    return view('loginRegis');
 });
 
 Route::get('/signup', function () {
-    return view('regist');
+    return view('loginRegis');
+});
+
+Route::get('/loginRegis', function () {
+    return view('/');
 });
 
 Route::post('/', function () {

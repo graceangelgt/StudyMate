@@ -12,29 +12,25 @@
     <!-- Header -->
     <div class="navbar">
         <a href="/" class="logo-section">
-            <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
-            <span class="logo-text">StudyMate</span>
+          <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
+          <span class="logo-text">StudyMate</span>
         </a>
-        <div class="nav-links">
-          <a href="#about" class="nav-link">About</a>
-          <a href="/#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
+          <div class="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#/features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
+          </div>
+          <div class="search-bar">
+            <i class="fas fa-search icon"></i>
+            <input type="text" placeholder="Search..">
+          </div>
+          <button class="login-button" onclick="window.location.href='/signin'">SIGN IN</button>
         </div>
-        <div class="search-bar">
-          <i class="fas fa-search icon"></i>
-          <input type="text" placeholder="Search..">
-        </div>
-        <div class="user-info">
-          <span class="points">0 Point</span>
-          <i class="fas fa-user-circle user-icon"></i>
-          <span class="username">USER</span>
-        </div>
-    </div>
 
 <main>
-    <div class="breadcrumb">
-        <a href="/all-room" class="breadcrumb-link">All Room</a> &gt; 
-        <a href="/system-information" class="breadcrumb-link">Sistem Informasi</a> &gt; 
-        <span class="breadcrumb-current">Subject</span>
+    <div class="breadcrumbs">
+        <p><span>All Room </span> &gt; 
+            <span> Sistem Informasi </span> &gt; 
+            <span> Create Modul </span> </p>
     </div>
 
     <div class="room-created">
@@ -47,7 +43,7 @@
                 <input type="text" value="https://cssmodule.roomstudy.com" readonly>
                 <i class="fas fa-copy copy-icon"></i>
             </div>
-            <button class="join-room-button">Join Room Study</button>
+            <a href="/liveroom"><button class="join-room-button">Join Room Study</button></a>
         </div>
     </div>
 </main>
