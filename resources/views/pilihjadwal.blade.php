@@ -138,5 +138,38 @@
             <p>Copyright © 2024 StudyMate | Desain Interaksi Praktikum</p>
         </div>
     </footer>
+
+    <!-- Custom Notification -->
+<div id="notification" class="notification-overlay">
+    <div class="notification-box">
+        <p>The room has started. Do you want to join now?</p>
+        <div class="notification-buttons">
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Script for Notification
+    document.querySelectorAll(".active").forEach((button) => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            const notification = document.getElementById("notification");
+            notification.style.display = "flex";
+
+            // Handle YES button
+            document.getElementById("yesButton").onclick = function () {
+                window.location.href = "/liveroom"; // Redirect to live room
+            };
+
+            // Handle NO button
+            document.getElementById("noButton").onclick = function () {
+                notification.style.display = "none";
+            };
+        });
+    });
+</script>
+
 </body>
 </html>
