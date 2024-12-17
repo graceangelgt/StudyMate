@@ -40,7 +40,7 @@
                   <div class="room-text-overlay">Modul HTML</div>
                 </div>
                 <div class="room-info">
-                  <i class="fas fa-heart"></i>
+                  <!-- <i class="fas fa-heart"></i> -->
                 </div>
             </a>
             <a href="" class="room-item">
