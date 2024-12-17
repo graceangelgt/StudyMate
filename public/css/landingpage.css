@@ -153,7 +153,7 @@ body {
 
 .landing__title {
   font-family: sans-serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-bottom: 1.5rem;
   font-weight: 900;
 }
@@ -163,6 +163,7 @@ body {
   font-family: sans-serif; /* Font yang menggunakan sans-serif */
   color: #333; /* Warna teks opsional */
   margin-bottom: 3rem;
+  margin-right: 1rem;
 }
 
 .landing__button {
@@ -381,7 +382,7 @@ body {
 .testimonial {
   padding-top: 10px;
   text-align: center;
-  background: linear-gradient(135deg, #28353D, #768A95); /* Gradient background */
+  background: rgba(69, 87, 109, 0.8);
   background-size: cover;
   padding-bottom: 80px;
 }
@@ -415,11 +416,11 @@ body {
 
 /* Testimonial card */
 .testimonial-card {
-  background-color: #3a5068;
+  background-color: #DFEBF7 ;
   padding: 20px;
   border-radius: 10px;
   width: 250px;
-  color: #ffffff;
+  color: black;
   flex: 0 0 auto;
   scroll-snap-align: center;
   display: flex;
@@ -472,7 +473,7 @@ body {
 /* Institution styling */
 .testimonial-institution {
   font-size: 0.8rem;
-  color: #dfebf7;
+  color: black;
 }
 
 .testimonial-navigation {
