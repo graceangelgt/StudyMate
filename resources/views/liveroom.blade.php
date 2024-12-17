@@ -17,7 +17,6 @@
         <div class="navbar">
             <div class="navbar-left">
                 <a href="/"><i class="fas fa-home"></i></a>
-                <i class="fas fa-user-friends"></i>
                 <i class="fas fa-cog"></i>
                 <a href="/shareroom"><i class="fas fa-share-alt"></i></a>
             </div>
