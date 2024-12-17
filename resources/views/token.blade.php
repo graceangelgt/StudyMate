@@ -28,12 +28,12 @@
 
     <main>
         <div class="breadcrumbs">
-          <p><a href="/user">Home</a> &gt; <a href="/major">Sistem Informasi</a> &gt; <a href="/modul">Modul HTML</a> &gt; Input Token</p>
+          <p><a href="/user">Home</a> &gt; <a href="/major">Sistem Informasi</a> &gt; <a href="/modul">Modul HTML</a> &gt; <a href="/pilihjadwal">girlsonly Room</a> &gt; Input Token</p>
         </div>
         <div class="module-container">
-            <h2>Modul HTML</h2>
+            <h2>girlsonly Room - Modul HTML</h2>
             <p class="private-room">Private Room</p>
-            <form action="/pilihjadwal" method="GET">
+            <form action="/liveroom" method="GET">
                 @csrf
                 <div class="token-input">
                     <label for="token">Input Token To Access This Module</label>

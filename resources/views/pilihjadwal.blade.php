@@ -49,7 +49,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Genius_People</td>
+                    <td><i class="fas fa-lock"></i> Genius_People</td>
                     <td>16.40 - 18.30 WIB</td>
                     <td>12/12</td>
                     <td class="status full">FULL</td>
@@ -63,11 +63,11 @@
                     <td><a href="/liveroom"><button class="active">Join Room</button></a></td>
                 </tr>
                 <tr>
-                    <td>girlsonly</td>
+                    <td><i class="fas fa-lock"></i> girlsonly</td>
                     <td>16.40 - 18.30 WIB</td>
                     <td>9/10</td>
                     <td class="status avail">AVAIL</td>
-                    <td><a href="/liveroom"><button class="active">Join Room</button></a></td>
+                    <td><a href="/token"><button class="active">Join Room</button></a></td>
                 </tr>
                 <tr>
                     <td>12SeniorHigh</td>
@@ -149,22 +149,43 @@
 </div>
 
 <script>
-    // Script for Notification
-    document.querySelectorAll(".active").forEach((button) => {
+    // Script for Notification and Redirection
+    document.querySelectorAll("button.active").forEach((button) => {
         button.addEventListener("click", function (event) {
-            event.preventDefault();
-            const notification = document.getElementById("notification");
-            notification.style.display = "flex";
+            const parentRow = button.closest("tr");
+            const isLocked = parentRow.querySelector(".fa-lock");
 
-            // Handle YES button
-            document.getElementById("yesButton").onclick = function () {
-                window.location.href = "/liveroom"; // Redirect to live room
-            };
+            if (isLocked) {
+                // Show notification for non-locked rooms
+                event.preventDefault();
+                const notification = document.getElementById("notification");
+                notification.style.display = "flex";
 
-            // Handle NO button
-            document.getElementById("noButton").onclick = function () {
-                notification.style.display = "none";
-            };
+                // Handle YES button
+                document.getElementById("yesButton").onclick = function () {
+                    window.location.href = "/token"; // Redirect to live room
+                };
+                
+                // Handle NO button
+                document.getElementById("noButton").onclick = function () {
+                    notification.style.display = "none";
+                };
+            } else {
+                // Show notification for non-locked rooms
+                event.preventDefault();
+                const notification = document.getElementById("notification");
+                notification.style.display = "flex";
+
+                // Handle YES button
+                document.getElementById("yesButton").onclick = function () {
+                    window.location.href = "/liveroom"; // Redirect to live room
+                };
+
+                // Handle NO button
+                document.getElementById("noButton").onclick = function () {
+                    notification.style.display = "none";
+                };
+            }
         });
     });
 </script>

@@ -29,16 +29,16 @@
 
 <main>
     <div class="breadcrumbs">
-        <p><a href="/user">Home</a> &gt; <a href="/major">Sistem Informasi</a> &gt; <a href="/modul">Modul HTML</a> &gt; <a href="/liveroom">Live Room</a> &gt; Share Room</p>
+        <p><a href="/user">Home</a> &gt; <a href="/major">Sistem Informasi</a> &gt; <a href="/modul">Modul HTML</a> &gt; <a href="/liveroom">girlsonly Room</a> &gt; Share Room</p>
     </div>
 
     <div class="room-created">
-        <h2>Share your Modul to your Friends!</h2>
-        <button class="module-button">HTML Module</button>
+        <h2>Share your Room to your Friends!</h2>
+        <button class="module-button">girlsonly Room - HTML Module</button>
 
         <div class="share-room">
             <div class="room-link">
-                <input type="text" value="https://htmlmodule.roomstudy.com" readonly>
+                <input type="text" value="girlsonly" readonly>
                 <i class="fas fa-copy copy-icon"></i>
             </div>
             <input type="text" placeholder="Add friend's ID" class="friend-id-input">

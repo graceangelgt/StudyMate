@@ -34,59 +34,53 @@
       
           <div class="room-grid">
             <!-- Room Items -->
-            <a href="/token" class="room-item">
+            <a href="/pilihjadwal" class="room-item">
                 <div class="room-image-container">
                   <img src="images/modhtml.png" alt="HTML Module">
                   <div class="room-text-overlay">Modul HTML</div>
                 </div>
                 <div class="room-info">
-                  <span>Private Room</span>
                   <i class="fas fa-heart"></i>
                 </div>
             </a>
-            <a href="/pilihjadwal" class="room-item">
+            <a href="" class="room-item">
                 <div class="room-image-container">
                   <img src="images/modarray.png" alt="HTML Module">
                   <div class="room-text-overlay">Modul Array</div>
                 </div>
                 <div class="room-info">
-                  <span>Public Room</span>
                 </div>
             </a>
-            <a href="/token" class="room-item">
+            <a href="" class="room-item">
                 <div class="room-image-container">
                   <img src="images/modcss.png" alt="HTML Module">
                   <div class="room-text-overlay">Modul CSS</div>
                 </div>
                 <div class="room-info">
-                  <span>Private Room</span>
                 </div>
             </a>
-            <a href="/pilihjadwal" class="room-item">
+            <a href="" class="room-item">
                 <div class="room-image-container">
                   <img src="images/modfunct.png" alt="HTML Module">
                   <div class="room-text-overlay">Modul Function</div>
                 </div>
                 <div class="room-info">
-                  <span>Public Room</span>
                 </div>
             </a>
-            <a href="/pilihjadwal" class="room-item">
+            <a href="" class="room-item">
                 <div class="room-image-container">
                   <img src="images/modphp.png" alt="HTML Module">
                   <div class="room-text-overlay">Modul PHP</div>
                 </div>
                 <div class="room-info">
-                  <span>Public Room</span>
                 </div>
             </a>
-            <a href="/pilihjadwal" class="room-item">
+            <a href="" class="room-item">
                 <div class="room-image-container">
                   <img src="images/moddatb.png" alt="HTML Module">
                   <div class="room-text-overlay">Modul Database</div>
                 </div>
                 <div class="room-info">
-                  <span>Public Room</span>
                 </div>
             </a>
               <!--<div class="room-item">
