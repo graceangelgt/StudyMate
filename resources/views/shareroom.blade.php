@@ -41,11 +41,6 @@
                 <input type="text" value="girlsonly" readonly>
                 <i class="fas fa-copy copy-icon"></i>
             </div>
-            <input type="text" placeholder="Add friend's ID" class="friend-id-input">
-            <button id="save-btn" class="join-room-button">Save Friend's ID</button>
-            <p id="save-notification" style="display: none; color: green; margin-top: 10px;">
-              Friend's ID has been saved successfully!
-            </p>            
         </div>
     </div>
 </main>

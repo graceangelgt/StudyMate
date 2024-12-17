@@ -155,14 +155,7 @@ body {
     margin-top: 20px;
   }
   
-  .friend-id-input {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-  }
+
   
   .room-link {
     align-items: center;
