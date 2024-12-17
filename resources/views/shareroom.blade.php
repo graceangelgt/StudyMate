@@ -11,39 +11,41 @@
 <body>
     <!-- Header -->
     <div class="navbar">
-        <a href="/" class="logo-section">
+        <a href="/user" class="logo-section">
           <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
           <span class="logo-text">StudyMate</span>
         </a>
-          <div class="nav-links">
-            <a href="#about" class="nav-link">About</a>
-            <a href="#/features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
-          </div>
-          <div class="search-bar">
-            <i class="fas fa-search icon"></i>
-            <input type="text" placeholder="Search..">
-          </div>
-          <button class="login-button" onclick="window.location.href='/signin'">SIGN IN</button>
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
         </div>
+        <div class="search-bar">
+          <i class="fas fa-search icon"></i>
+          <input type="text" placeholder="Search..">
+        </div>
+        <a class="nav-link"><i class="fas fa-user"></i> USER</a>
+        <button class="logout-button" onclick="window.location.href='/'">SIGN OUT</button>
+      </div>
 
 <main>
     <div class="breadcrumbs">
-        <p><span>All Room </span> &gt; 
-            <span> Sistem Informasi </span> &gt; 
-            <span> Create Modul </span> </p>
+        <p><a href="/user">Home</a> &gt; <a href="/major">Sistem Informasi</a> &gt; <a href="/modul">Modul HTML</a> &gt; <a href="/liveroom">Live Room</a> &gt; Share Room</p>
     </div>
 
     <div class="room-created">
-        <h2>Congratulations! Your room has been created!</h2>
-        <button class="module-button">CSS Module</button>
+        <h2>Share your Modul to your Friends!</h2>
+        <button class="module-button">HTML Module</button>
 
         <div class="share-room">
-            <input type="text" placeholder="Add friend's ID" class="friend-id-input">
             <div class="room-link">
-                <input type="text" value="https://cssmodule.roomstudy.com" readonly>
+                <input type="text" value="https://htmlmodule.roomstudy.com" readonly>
                 <i class="fas fa-copy copy-icon"></i>
             </div>
-            <a href="/liveroom"><button class="join-room-button">Join Room Study</button></a>
+            <input type="text" placeholder="Add friend's ID" class="friend-id-input">
+            <button id="save-btn" class="join-room-button">Save Friend's ID</button>
+            <p id="save-notification" style="display: none; color: green; margin-top: 10px;">
+              Friend's ID has been saved successfully!
+            </p>            
         </div>
     </div>
 </main>
@@ -96,5 +98,6 @@
         <p>Copyright © 2024 StudyMate | Desain Interaksi Praktikum</p>
     </div>
 </footer>
+<script src="js/shareroom.js"></script>
 </body>
 </html>

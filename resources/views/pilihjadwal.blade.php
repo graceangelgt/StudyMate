@@ -11,28 +11,26 @@
 <body>
     <!-- Header -->
     <div class="navbar">
-        <a href="/" class="logo-section">
-            <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
-            <span class="logo-text">StudyMate</span>
+        <a href="/user" class="logo-section">
+          <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
+          <span class="logo-text">StudyMate</span>
         </a>
         <div class="nav-links">
           <a href="#about" class="nav-link">About</a>
-          <a href="/#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
+          <a href="#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
         </div>
         <div class="search-bar">
           <i class="fas fa-search icon"></i>
           <input type="text" placeholder="Search..">
         </div>
-        <button class="login-button" onclick="window.location.href='/signin'">SIGN IN</button>
+        <a class="nav-link"><i class="fas fa-user"></i> USER</a>
+        <button class="logout-button" onclick="window.location.href='/'">SIGN OUT</button>
       </div>
 
     <!-- Content -->
     <main>
         <div class="breadcrumbs">
-            <p><span>All Room </span> &gt; 
-                <span> Sistem Informasi </span> &gt; 
-                <span> Modul HTML </span> &gt;
-                <span> Pilih Jadwal </span> </p>
+            <p><a href="/user">Home</a> &gt; <a href="/major">Sistem Informasi</a> &gt; <a href="/modul">Modul HTML</a> &gt; Pilih Jadwal</p>
         </div>
         <h1 class="page-title">Modul HTML</h1>
         <div class="search-container">
@@ -138,5 +136,38 @@
             <p>Copyright © 2024 StudyMate | Desain Interaksi Praktikum</p>
         </div>
     </footer>
+
+    <!-- Custom Notification -->
+<div id="notification" class="notification-overlay">
+    <div class="notification-box">
+        <p>The room has started. Do you want to join now?</p>
+        <div class="notification-buttons">
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Script for Notification
+    document.querySelectorAll(".active").forEach((button) => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            const notification = document.getElementById("notification");
+            notification.style.display = "flex";
+
+            // Handle YES button
+            document.getElementById("yesButton").onclick = function () {
+                window.location.href = "/liveroom"; // Redirect to live room
+            };
+
+            // Handle NO button
+            document.getElementById("noButton").onclick = function () {
+                notification.style.display = "none";
+            };
+        });
+    });
+</script>
+
 </body>
 </html>

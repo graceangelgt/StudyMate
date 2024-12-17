@@ -6,35 +6,31 @@
   <title>StudyMate</title>
   <link rel="stylesheet" href="css/modul.css">
   <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
 <body>
   <div class="navbar">
-    <a href="/" class="logo-section">
+    <a href="/user" class="logo-section">
       <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
       <span class="logo-text">StudyMate</span>
     </a>
     <div class="nav-links">
       <a href="#about" class="nav-link">About</a>
-      <a href="/#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
-  </div>
+      <a href="#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
+    </div>
     <div class="search-bar">
       <i class="fas fa-search icon"></i>
       <input type="text" placeholder="Search..">
     </div>
-    <button class="login-button" onclick="window.location.href='/signin'">SIGN IN</button>
+    <a class="nav-link"><i class="fas fa-user"></i> USER</a>
+    <button class="logout-button" onclick="window.location.href='/'">SIGN OUT</button>
   </div>
 
     <main>
 
-      <div class="header-container">
-          <div class="breadcrumbs">
-              <p>All Room &gt; Sistem Informasi &gt; Subject</p>
-          </div>
-          <div class="room-header">
-              <a href="/createmodul"><button class="add-module-btn">+ Add New Module</button></a>
-          </div>
-      </div>
+      <div class="breadcrumbs">
+        <p><a href="/user">Home</a> &gt; <a href="/major">Sistem Informasi</a> &gt; Subject</p>
+    </div>
       
           <div class="room-grid">
             <!-- Room Items -->
