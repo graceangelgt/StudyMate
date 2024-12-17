@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/modul.css">
   <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Jost:ital,wght@0,100..900;1,100..900&family=Modak&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="navbar">
@@ -93,53 +94,53 @@
           </div>
     </main>
 
-    <footer id="about">
-        <div class="footer-container">
-        <div class="footer-section about">
-        <img src="images/logostudymate.png" alt="StudyMate Logo" class="logof">
-        <span class="logof-text">StudyMate</span>
-        <p>
-            Join StudyMate to access online study rooms, free and premium resources, and mentor guidance. 
-            Stay organized, earn rewards, and reach your study goals effortlessly!
-        </p>
+  <footer id="about">
+    <div class="footer-container">
+    <div class="footer-section about">
+    <img src="images/logostudymate.png" alt="StudyMate Logo" class="logof">
+    <span class="logof-text">StudyMate</span>
+    <p>
+        Join StudyMate to access online study rooms, free and premium resources, and mentor guidance. 
+        Stay organized, earn rewards, and reach your study goals effortlessly!
+    </p>
+</div>
+        <div class="footer-section links">
+            <h4>GET HELP</h4>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Latest Articles</a></li>
+                <li><a href="#">How To Use StudyMate</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-section links">
+            <h4>FEATURE</h4>
+            <ul>
+                <li><a href="#">Room Study</a></li>
+                <li><a href="#">Request Mentor</a></li>
+                <li><a href="#">Study Schedule</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Point System</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h4>CONTACT US</h4>
+            <p>Address: Jl. Pendidikan No. 45, Surabaya, Indonesia</p>
+            <p>Tel: +62 (361) 123-4567</p>
+            <p>Mail: support@studymate.com</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
     </div>
-            <div class="footer-section links">
-                <h4>GET HELP</h4>
-                <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Latest Articles</a></li>
-                    <li><a href="#">How To Use StudyMate</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer-section links">
-                <h4>FEATURE</h4>
-                <ul>
-                    <li><a href="#">Room Study</a></li>
-                    <li><a href="#">Request Mentor</a></li>
-                    <li><a href="#">Study Schedule</a></li>
-                    <li><a href="#">Library</a></li>
-                    <li><a href="#">Point System</a></li>
-                </ul>
-            </div>
-            <div class="footer-section contact">
-                <h4>CONTACT US</h4>
-                <p>Address: Jl. Pendidikan No. 45, Surabaya, Indonesia</p>
-                <p>Tel: +62 (361) 123-4567</p>
-                <p>Mail: support@studymate.com</p>
-                <div class="socials">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-pinterest"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>Copyright © 2024 StudyMate | Desain Interaksi Praktikum</p>
-        </div>
-    </footer>
+    <div class="footer-bottom">
+        <p>Copyright © 2024 StudyMate | Desain Interaksi Praktikum</p>
+    </div>
+</footer>
     
     </body>
     </html>

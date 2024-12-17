@@ -205,111 +205,113 @@ button.disabled {
 
 /* footer */
 footer {
-    background-color: #fffefe;
-    padding: 10px 0;
-    font-family:  sans-serif;
+  background-color: #f0f0f0;
+  padding: 40px 0;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .footer-section {
-    flex: 1;
-    padding: 0 30px;
+  flex: 1;
+  padding: 0 30px;
 }
 
 .logo-container {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 .logof {
-  height: 40px;
-  margin-right: 10px;
-  margin-left: 30px; 
+height: 40px;
+margin-right: 10px;
+margin-left: 30px; 
+vertical-align: middle;
 }
 
 .logof-text {
-  font-family:  sans-serif;
-  font-size: 24px;
-  color: #29353C
+font-family: 'Chewy', sans-serif;
+font-size: 24px;
+color: #29353C
 }
 
 .footer-section h4 {
-  font-weight: bold;
-  margin-bottom: 15px;
-  font-family:  sans-serif;
-  color: #29353C;
-  padding-left: 30px; /* Menambah ruang di sisi kiri */
+font-weight: bold;
+margin-bottom: 15px;
+font-family: 'Jost', sans-serif;
+color: #29353C;
+padding-left: 30px; /* Menambah ruang di sisi kiri */
 }
 
 .footer-section p {
-    margin-left: 30px;
-    font-size: 15px;
-    line-height: 2;
-    color: #696F79;
-    text-align: justify;
-    width: 300px;
-    font-family:  sans-serif
+  margin-left: 30px;
+  font-size: 15px;
+  line-height: 2;
+  color: #696F79;
+  text-align: justify;
+  width: 300px;
+  font-family: 'Jost', sans-serif
 
 }
 
 .footer-section ul {
-    margin-left: -10px;
-    list-style: none;
-    text-align: left;
-    font-family: sans-serif;
-    color: #696F79
+  margin-left: -10px;
+  list-style: none;
+  text-align: left;
+  font-family: 'Jost', sans-serif;
+  color: #696F79
 }
 
 .footer-section ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 0.9em;
-    line-height: 2;
-    text-align: left;
-    font-family:  sans-serif;
-    color: #696F79
-    
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9em;
+  line-height: 2;
+  text-align: left;
+  font-family: 'Jost', sans-serif;
+  color: #696F79
+  
 }
 
 .footer-section ul li a:hover {
-    color: #0056b3;
+  color: #0056b3;
 }
 
 .footer-section.contact p {
-    font-size: 0.9em;
-    line-height: 1.6;
-    color: #696F79;
-    font-family:  sans-serif
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #696F79;
+  font-family: 'Jost', sans-serif
 }
 
 .footer-section .socials a {
-    color: #696F79;
-    font-size: 1.2em;
-    margin-left: 20px;
-    text-decoration: none;
-    font-family: sans-serif;
-    margin-left: 30px;
-    
+  color: #696F79;
+  font-size: 1.2em;
+  margin-left: 20px;
+  text-decoration: none;
+  font-family: 'Jost', sans-serif;
+  margin-left: 30px;
+  
 }
 
 .footer-section .socials a:hover {
-    color: #0056b3;
+  color: #0056b3;
 }
 
 .footer-bottom {
-    text-align: center;
-    padding: 10px 0;
-    font-size: 13px;
-    color: #666;
-    border-top: 1px solid #ddd;
-    font-family: sans-serif
+  text-align: center;
+  padding: 20px 0;
+  font-size: 13px;
+  color: #666;
+  border-top: 1px solid #ddd;
+  font-family: 'Jost', sans-serif
 }
 
 /* Notification Overlay */
