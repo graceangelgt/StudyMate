@@ -17,7 +17,7 @@ body {
     background: #f6f5f7;
     display: grid;
     place-content: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
 }
 
 .container {

@@ -1,7 +1,7 @@
 /* Global */
 body {
     margin: 0;
-    font-family: 'Jost', sans-serif;
+    font-family:  sans-serif;
     background: #DFEBF7;
 }
 
@@ -28,7 +28,7 @@ body {
   }
   
   .logo-text {
-    font-family: 'Chewy', sans-serif;
+    font-family: sans-serif;
     font-size: 24px;
     color: #29353C;
   }
@@ -178,7 +178,7 @@ body {
 footer {
     background-color: #fffefe;
     padding: 10px 0;
-    font-family: 'DM Sans', sans-serif;
+    font-family:  sans-serif;
 }
 
 .footer-container {
@@ -206,7 +206,7 @@ footer {
 }
 
 .logof-text {
-  font-family: 'Chewy', sans-serif;
+  font-family: sans-serif;
   font-size: 24px;
   color: #29353C
 }
@@ -226,7 +226,7 @@ footer {
     color: #696F79;
     text-align: justify;
     width: 300px;
-    font-family: 'Jost', sans-serif
+    font-family: sans-serif
 
 }
 
@@ -234,7 +234,7 @@ footer {
     margin-left: -10px;
     list-style: none;
     text-align: left;
-    font-family: 'Jost', sans-serif;
+    font-family: sans-serif;
     color: #696F79
 }
 
@@ -244,7 +244,7 @@ footer {
     font-size: 0.9em;
     line-height: 2;
     text-align: left;
-    font-family: 'Jost', sans-serif;
+    font-family: sans-serif;
     color: #696F79
     
 }
@@ -257,7 +257,7 @@ footer {
     font-size: 0.9em;
     line-height: 1.6;
     color: #696F79;
-    font-family: 'Jost', sans-serif
+    font-family:  sans-serif
 }
 
 .footer-section .socials a {
@@ -265,7 +265,7 @@ footer {
     font-size: 1.2em;
     margin-left: 20px;
     text-decoration: none;
-    font-family: 'Jost', sans-serif;
+    font-family: sans-serif;
     margin-left: 30px;
     
 }
@@ -280,5 +280,5 @@ footer {
     font-size: 13px;
     color: #666;
     border-top: 1px solid #ddd;
-    font-family: 'Jost', sans-serif
+    font-family: sans-serif
 }
