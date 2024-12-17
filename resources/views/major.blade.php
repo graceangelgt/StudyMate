@@ -27,7 +27,7 @@
 
     <main>
         <div class="breadcrumbs">
-            <p>All Room &gt; Major
+            <p><a href="/">Home</a> &gt; Major
           </div>
         <div class="room-grid">
             <a href="/modul" class="room-item">

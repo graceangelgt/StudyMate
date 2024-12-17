@@ -6,7 +6,7 @@
   <title>StudyMate</title>
   <link rel="stylesheet" href="css/modul.css">
   <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
 <body>
   <div class="navbar">
@@ -27,14 +27,9 @@
 
     <main>
 
-      <div class="header-container">
-          <div class="breadcrumbs">
-              <p>All Room &gt; Sistem Informasi &gt; Subject</p>
-          </div>
-          <div class="room-header">
-              <a href="/createmodul"><button class="add-module-btn">+ Add New Module</button></a>
-          </div>
-      </div>
+      <div class="breadcrumbs">
+        <p><a href="/">Home</a> &gt; <a href="/major">Sistem Informasi</a> &gt; Subject</p>
+    </div>
       
           <div class="room-grid">
             <!-- Room Items -->

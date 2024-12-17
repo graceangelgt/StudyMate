@@ -29,10 +29,7 @@
     <!-- Content -->
     <main>
         <div class="breadcrumbs">
-            <p><span>All Room </span> &gt; 
-                <span> Sistem Informasi </span> &gt; 
-                <span> Modul HTML </span> &gt;
-                <span> Pilih Jadwal </span> </p>
+            <p><a href="/">Home</a> &gt; <a href="/major">Sistem Informasi</a> &gt; <a href="/modul">Modul HTML</a> &gt; Pilih Jadwal</p>
         </div>
         <h1 class="page-title">Modul HTML</h1>
         <div class="search-container">

@@ -27,9 +27,7 @@
 
     <main>
         <div class="breadcrumbs">
-            <p><span>All Room </span> &gt; 
-                <span> Sistem Informasi </span> &gt; 
-                <span> Subject </span> </p>
+          <p><a href="/">Home</a> &gt; <a href="/major">Sistem Informasi</a> &gt; <a href="/modul">Modul HTML</a> &gt; Input Token</p>
         </div>
         <div class="module-container">
             <h2>Modul HTML</h2>
