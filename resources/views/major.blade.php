@@ -32,23 +32,23 @@
           </div>
         <div class="room-grid">
             <a href="/modul" class="room-item">
-                <img src="images/SI.png" alt="Image description">
+                <img src="images/sisfor.jpeg" alt="Image description">
                 <div class="label">Sistem Informasi</div>
             </a>            
             <div class="room-item">
-                <img src="images/FIS.png" alt="Image description">
+                <img src="images/fisika.png" alt="Image description">
                 <div class="label">Fisika</div>
             </div>
             <div class="room-item">
-                <img src="images/BIO.png" alt="Image description">
+                <img src="images/biologi.png" alt="Image description">
                 <div class="label">Biologi</div>
             </div>
             <div class="room-item">
-                <img src="images/TB.png" alt="Image description">
+                <img src="images/biomed.png" alt="Image description">
                 <div class="label">Teknik Biomedik</div>
             </div>
             <div class="room-item">
-                <img src="images/MAT.png" alt="Image description">
+                <img src="images/math.jpg" alt="Image description">
                 <div class="label">Matematika</div>
             </div>
             <div class="room-item">
