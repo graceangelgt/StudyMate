@@ -1,25 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-
 :root {
     --linear-grad: linear-gradient(to right, #141E30, #243B55);
     --grad-clr1: #141E30;
     --grad-clr2: #243B55;
 }
-
 body {
     height: 100vh;
     background: #f6f5f7;
     display: grid;
     place-content: center;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-
 .container {
     position: relative;
     width: 850px;
@@ -46,7 +42,6 @@ body {
 .sign-in-container{
     z-index: 2;
 }
-
 form {
     height: 100%;
     display: flex;
@@ -74,7 +69,6 @@ h1 {
     height: 40px;
     width: 40px;
 }
-
 span {
     font-size: 12px;
     }
@@ -92,7 +86,6 @@ input {
     border: none;
     outline: none;
 }
-
 label {
     position: absolute;
     left: 50%;
@@ -114,12 +107,10 @@ a {
     text-decoration: none;
     margin: 15px 0px;
     }
-
 a.forgot {
     padding-bottom: 3px;
     border-bottom: 2px solid #EEE;
 }
-
 button {
     border-radius: 20px;
     border: 1px solid var(--grad-clr1);
@@ -131,7 +122,6 @@ button {
     letter-spacing: 1px;
     text-transform:uppercase;
 }
-
 .form-container button {
     margin-top: 17px;
     transition: 80ms ease-in;
@@ -141,7 +131,6 @@ button {
     background: #FFF;
     color: var(--grad-clr1);
     }
-
 .overlay-container {
     position: absolute;
     top: 0;
@@ -152,7 +141,6 @@ button {
     transition: transform 0.6s ease-in-out;
     z-index: 9;
 }
-
 #overlayBtn {
     cursor: pointer;
     position: absolute;
@@ -175,7 +163,6 @@ button {
     width: 250%;
     transition: transform 0.6s ease-in-out;
     }
-
 .overlay-panel {
     position: absolute;
     display: flex;
@@ -192,12 +179,10 @@ button {
     right: 60%;
     transform: translateX(-12%);
 }
-
 .overlay-right {
     right: 0;
     transform: translateX(0%);
 }
-
 .overlay-panel h1 {
     color: #FFF;
     }
@@ -209,7 +194,6 @@ p {
     letter-spacing: 0.5px;
     margin: 25px 0px 35px;   
 }
-
 .overlay-panel button {
     border: none;
     background-color: transparent;
@@ -235,14 +219,12 @@ p {
     transform: translateX(20%);
     opacity: 0;
     }
-
 .right-panel-active .sign-up-container {
     transform: translateX(66.7%);
     opacity: 1;
     z-index: 5;
     animation: show 0.6s;
 }
-
 @keyframes show {
     0%, 50% {
         opacity: 0;
@@ -253,7 +235,6 @@ p {
     z-index: 5;
     }
 }
-
 .btnScaled {
     animation: scaleBtn 0.65;
     }
