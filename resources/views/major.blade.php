@@ -52,19 +52,19 @@
                 <div class="label">Matematika</div>
             </div>
             <div class="room-item">
-                <img src="images/KIM.png" alt="Image description">
+                <img src="images/KIM.jpg" alt="Image description">
                 <div class="label">Kimia</div>
             </div>
             <div class="room-item">
-                <img src="images/STAT.png" alt="Image description">
+                <img src="images/STAT.jpeg" alt="Image description">
                 <div class="label">Statistika</div>
             </div>
             <div class="room-item">
-                <img src="images/TE.png" alt="Image description">
+                <img src="images/TE.jpg" alt="Image description">
                 <div class="label">Teknik Elektro</div>
             </div>
             <div class="room-item">
-                <img src="images/ROB.png" alt="Image description">
+                <img src="images/ROB.jpg" alt="Image description">
                 <div class="label">Robotika</div>
             </div>
         </div>
