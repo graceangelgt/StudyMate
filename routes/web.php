@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('landingpage');
 });
 
+Route::get('/user', function () {
+    return view('landingpage2');
+});
+
 Route::get('/major', function () {
     return view('major');
 });
@@ -45,11 +49,7 @@ Route::get('/createmodul', function () {
     return view('createmodul');
 });
 
-Route::get('/signin', function () {
-    return view('loginRegis');
-});
-
-Route::get('/signup', function () {
+Route::get('/signin-signup', function () {
     return view('loginRegis');
 });
 
@@ -57,9 +57,9 @@ Route::get('/loginRegis', function () {
     return view('/');
 });
 
-Route::post('/', function () {
+Route::post('/user', function () {
     // Tangani logika pendaftaran di sini
-    return view('landingpage'); // Kembali ke halaman landing page setelah signup
+    return view('landingpage2'); // Kembali ke halaman landing page setelah signup
 });
 
 Route::get('/shareroom', function () {

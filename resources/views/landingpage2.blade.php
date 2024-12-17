@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="navbar">
-    <a href="/" class="logo-section">
+    <a href="/user" class="logo-section">
       <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
       <span class="logo-text">StudyMate</span>
     </a>
@@ -24,7 +24,8 @@
       <i class="fas fa-search icon"></i>
       <input type="text" placeholder="Search..">
     </div>
-    <button class="login-button" onclick="window.location.href='/signin-signup'">SIGN IN</button>
+    <a class="nav-link"><i class="fas fa-user"></i> USER</a>
+    <button class="logout-button" onclick="window.location.href='/'">SIGN OUT</button>
   </div>
   <section class="landing">
     <div class="landing__content">
@@ -34,7 +35,7 @@
         <!-- Tambahan subjudul dan deskripsi yang baru -->
         <p class="landing__description">Join StudyMate to access online study rooms, free and premium resources, and mentor guidance. Stay organized, earn rewards, and reach your study goals effortlessly!</p>
         
-        <a href="/signin-signup" class="landing__button">Sign Up Now<i class="ri-arrow-right-line"></i></a>
+        <a href="#features" class="landing__button">Get Started<i class="ri-arrow-right-line"></i></a>
     </div>
     <div class="landing__image">
         <img src="images/stduymate_lp.png" alt="Cupcakes">
@@ -45,7 +46,7 @@
   <div class="features__flex">
     <div class="feature top-feature">
       <img src="images/c1.png" alt="Room Study">
-      <a href="/signin-signup" class="feature__button">Room Study</a>
+      <a href="/major" class="feature__button">Room Study</a>
     </div>
     <div class="feature top-feature">
       <img src="images/c2.png" alt="Request Mentor">

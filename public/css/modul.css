@@ -95,7 +95,7 @@ body {
   color: #ffffff;
 }
 
-.login-button {
+.logout-button {
   background: none;
   border: 1px solid #333;
   padding: 8px 20px;
@@ -106,8 +106,9 @@ body {
   transition: background 0.3s;
 }
 
-.login-button:hover {
-  background: #333;
+.logout-button:hover {
+  border: 1px solid red;
+  background: red;
   color: white;
 }
 

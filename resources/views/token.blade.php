@@ -9,25 +9,26 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
-      <a href="/" class="logo-section">
-        <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
-        <span class="logo-text">StudyMate</span>
-      </a>
-        <div class="nav-links">
-          <a href="#about" class="nav-link">About</a>
-          <a href="#/features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
-        </div>
-        <div class="search-bar">
-          <i class="fas fa-search icon"></i>
-          <input type="text" placeholder="Search..">
-        </div>
-        <button class="login-button" onclick="window.location.href='/signin'">SIGN IN</button>
-      </div>
+  <div class="navbar">
+    <a href="/user" class="logo-section">
+      <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
+      <span class="logo-text">StudyMate</span>
+    </a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
+    </div>
+    <div class="search-bar">
+      <i class="fas fa-search icon"></i>
+      <input type="text" placeholder="Search..">
+    </div>
+    <a class="nav-link"><i class="fas fa-user"></i> USER</a>
+    <button class="logout-button" onclick="window.location.href='/'">SIGN OUT</button>
+  </div>
 
     <main>
         <div class="breadcrumbs">
-          <p><a href="/">Home</a> &gt; <a href="/major">Sistem Informasi</a> &gt; <a href="/modul">Modul HTML</a> &gt; Input Token</p>
+          <p><a href="/user">Home</a> &gt; <a href="/major">Sistem Informasi</a> &gt; <a href="/modul">Modul HTML</a> &gt; Input Token</p>
         </div>
         <div class="module-container">
             <h2>Modul HTML</h2>

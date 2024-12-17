@@ -10,24 +10,25 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="/" class="logo-section">
-            <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
-            <span class="logo-text">StudyMate</span>
+        <a href="/user" class="logo-section">
+          <img src="images/logostudymate.png" alt="StudyMate Logo" class="logo">
+          <span class="logo-text">StudyMate</span>
         </a>
         <div class="nav-links">
-            <a href="#about" class="nav-link">About</a>
-            <a href="/#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#features" class="nav-link">Features <i class="fas fa-caret-down"></i></a>
         </div>
         <div class="search-bar">
           <i class="fas fa-search icon"></i>
           <input type="text" placeholder="Search..">
         </div>
-        <button class="login-button" onclick="window.location.href='/signin'">SIGN IN</button>
+        <a class="nav-link"><i class="fas fa-user"></i> USER</a>
+        <button class="logout-button" onclick="window.location.href='/'">SIGN OUT</button>
       </div>
 
     <main>
         <div class="breadcrumbs">
-            <p><a href="/">Home</a> &gt; Major
+            <p><a href="/user">Home</a> &gt; Major
           </div>
         <div class="room-grid">
             <a href="/modul" class="room-item">
