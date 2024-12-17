@@ -150,7 +150,7 @@
             <p>Copyright © 2024 StudyMate | Desain Interaksi Praktikum</p>
         </div>
     </footer>
-    <script src="js/modul.js"></script>
+    
     </body>
     </html>
     
@@ -172,15 +172,3 @@
         scrollTestimonials('right');
       }
     </script>
-
-    <!-- Notification Popup -->
-<div id="notification-popup" class="notification-popup">
-  <div class="popup-content">
-    <p>The room has started. Do you want to join now?</p>
-    <div class="popup-buttons">
-      <button onclick="joinRoom()" class="btn yes">Yes</button>
-      <button onclick="closeNotification()" class="btn no">No</button>
-    </div>
-  </div>
-</div>
-
