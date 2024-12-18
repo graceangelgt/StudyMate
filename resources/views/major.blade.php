@@ -64,7 +64,7 @@
                 <div class="label">Teknik Elektro</div>
             </div>
             <div class="room-item">
-                <img src="images/ROB.jpg" alt="Image description">
+                <img src="images/robi.jpg" alt="Image description">
                 <div class="label">Robotika</div>
             </div>
         </div>

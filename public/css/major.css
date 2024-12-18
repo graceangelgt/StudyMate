@@ -126,11 +126,14 @@ main h1 {
 }
 
 .room-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 25px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 25px 0;
+  grid-auto-rows: 250px;
+  grid-auto-columns: 1fr;
 }
+
 
 .room-item {
     position: relative;
